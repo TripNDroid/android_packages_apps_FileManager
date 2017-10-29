@@ -1,45 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+<!--
+    Copyright (C) 2014 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>
 
-          http://www.apache.org/licenses/LICENSE-2.0
+    This file is part of Amaze File Manager.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  <!-- Command definition -->
-  <declare-styleable name="Command">
-    <!-- Unique identifier of the commmand -->
-    <attr name="commandId" format="string" />
-    <!-- The full qualified path to the executable -->
-    <attr name="commandPath" format="string" />
-    <!-- The arguments to be passed to the executable -->
-    <attr name="commandArgs" format="string" />
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+<resources>
+
+    <attr name="popup" format="reference" />
+    <attr name="toolbar_theme" format="reference" />
+    <attr name="ripple_color" format="color" />
+
+    <declare-styleable name="Indicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_showShadow" format="boolean" />
+        <attr name="fab_shadowColor" format="color" />
+        <attr name="fab_shadowRadius" format="dimension" />
+        <attr name="fab_shadowXOffset" format="dimension" />
+        <attr name="fab_shadowYOffset" format="dimension" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_showAnimation" format="reference" />
+        <attr name="fab_hideAnimation" format="reference" />
+        <attr name="fab_label" format="string" />
+        <attr name="fab_elevationCompat" format="dimension" />
+        <attr name="fab_progress_color" format="color" />
+        <attr name="fab_progress_backgroundColor" format="color" />
+        <attr name="fab_progress_indeterminate" format="boolean" />
+        <attr name="fab_progress_max" format="integer" />
+        <attr name="fab_progress" format="integer" />
+        <attr name="fab_progress_showBackground" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionMenu">
+        <attr name="menu_showShadow" format="boolean" />
+        <attr name="menu_buttonSpacing" format="dimension" />
+        <attr name="menu_labels_margin" format="dimension" />
+        <attr name="menu_labels_showAnimation" format="reference" />
+        <attr name="menu_labels_hideAnimation" format="reference" />
+        <attr name="menu_labels_paddingTop" format="dimension" />
+        <attr name="menu_labels_paddingLeft" format="dimension" />
+        <attr name="menu_labels_paddingRight" format="dimension" />
+        <attr name="menu_labels_paddingBottom" format="dimension" />
+        <attr name="menu_labels_padding" format="dimension" />
+        <attr name="menu_labels_textColor" format="reference|color" />
+        <attr name="menu_labels_textSize" format="dimension" />
+        <attr name="menu_labels_cornerRadius" format="dimension" />
+        <attr name="menu_labels_showShadow" format="boolean" />
+        <attr name="menu_labels_colorNormal" format="color" />
+        <attr name="menu_labels_colorPressed" format="color" />
+        <attr name="menu_labels_colorRipple" format="color" />
+        <attr name="menu_labels_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="menu_icon" format="reference" />
+        <attr name="menu_animationDelayPerItem" format="integer" />
+        <attr name="menu_buttonToggleAnimation" format="reference" />
+        <attr name="menu_labels_singleLine" format="boolean" />
+        <attr name="menu_labels_ellipsize" format="enum">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="menu_labels_maxLines" format="integer" />
+        <attr name="menu_fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="menu_labels_style" format="reference" />
+        <attr name="menu_labels_customFont" format="string" />
+        <attr name="menu_shadowColor" format="color" />
+        <attr name="menu_shadowRadius" format="dimension" />
+        <attr name="menu_shadowXOffset" format="dimension" />
+        <attr name="menu_shadowYOffset" format="dimension" />
+        <attr name="menu_colorNormal" format="color" />
+        <attr name="menu_colorPressed" format="color" />
+        <attr name="menu_colorRipple" format="color" />
+        <attr name="menu_openDirection" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+        <attr name="menu_backgroundColor" format="color" />
+        <attr name="menu_fab_label" format="string" />
+        <attr name="menu_fab_show_animation" format="reference" />
+        <attr name="menu_fab_hide_animation" format="reference" />
+    </declare-styleable>
+
+  <!-- These top three attributes are not accessible to library users -->
+  <attr name="md_divider" format="color" />
+
+  <!-- Accessible global theming attributes -->
+  <attr name="md_dark_theme" format="boolean" />
+  <attr name="md_background_color" format="color" />
+
+  <attr name="md_icon" format="reference" />
+  <attr name="md_icon_max_size" format="dimension" />
+  <attr name="md_icon_limit_icon_to_default_size" format="boolean" />
+
+  <attr name="md_title_color" format="color" />
+  <attr name="md_content_color" format="color" />
+  <attr name="md_link_color" format="color" />
+
+  <attr name="md_positive_color" format="color" />
+  <attr name="md_neutral_color" format="color" />
+  <attr name="md_negative_color" format="color" />
+  <attr name="md_widget_color" format="color" />
+
+  <attr name="md_item_color" format="color" />
+  <attr name="md_divider_color" format="color" />
+  <attr name="md_list_selector" format="reference" />
+
+  <attr name="md_btn_stacked_selector" format="reference" />
+  <attr name="md_btn_positive_selector" format="reference" />
+  <attr name="md_btn_neutral_selector" format="reference" />
+  <attr name="md_btn_negative_selector" format="reference" />
+
+  <attr name="md_btn_ripple_color" format="color" />
+
+  <attr name="md_title_gravity" format="enum">
+    <enum name="start" value="0" />
+    <enum name="center" value="1" />
+    <enum name="end" value="2" />
+  </attr>
+
+  <attr name="md_content_gravity" format="enum">
+    <enum name="start" value="0" />
+    <enum name="center" value="1" />
+    <enum name="end" value="2" />
+  </attr>
+
+  <attr name="md_btnstacked_gravity" format="enum">
+    <enum name="start" value="0" />
+    <enum name="center" value="1" />
+    <enum name="end" value="2" />
+  </attr>
+
+  <attr name="md_items_gravity" format="enum">
+    <enum name="start" value="0" />
+    <enum name="center" value="1" />
+    <enum name="end" value="2" />
+  </attr>
+
+  <attr name="md_buttons_gravity" format="enum">
+    <enum name="start" value="0" />
+    <enum name="center" value="1" />
+    <enum name="end" value="2" />
+  </attr>
+
+  <declare-styleable name="MDRootLayout">
+    <attr name="md_reduce_padding_no_title_no_buttons" format="boolean" />
   </declare-styleable>
 
-  <!-- Bookmark definition -->
-  <declare-styleable name="Bookmark">
-    <!-- The name of the bookmark -->
-    <attr name="name" format="string" />
-    <!-- The folder which the bookmark point to -->
-    <attr name="directory" format="string" />
-  </declare-styleable>
+  <attr name="md_medium_font" format="string" />
+  <attr name="md_regular_font" format="string" />
 
-  <!-- Navigable definition -->
-  <declare-styleable name="Navigable">
-    <!-- The type of navigation -->
-    <attr name="navigation" format="integer">
-      <enum name="browsable" value="0" />
-      <enum name="pickable" value="1" />
-    </attr>
-  </declare-styleable>
+    <declare-styleable name="MaterialProgressBar">
+
+        <attr name="mpb_progressStyle" format="enum">
+            <enum name="circular" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+
+        <attr name="mpb_setBothDrawables" format="boolean" />
+        <attr name="mpb_useIntrinsicPadding" format="boolean" />
+        <attr name="mpb_showProgressBackground" format="boolean" />
+
+        <attr name="mpb_determinateCircularProgressStyle" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dynamic" value="1" />
+        </attr>
+
+        <attr name="mpb_progressTint" format="color|reference" />
+        <attr name="mpb_progressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mpb_secondaryProgressTint" format="color|reference" />
+        <attr name="mpb_secondaryProgressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mpb_progressBackgroundTint" format="color|reference" />
+        <attr name="mpb_progressBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mpb_indeterminateTint" format="color|reference" />
+        <attr name="mpb_indeterminateTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+    </declare-styleable>
 
 </resources>

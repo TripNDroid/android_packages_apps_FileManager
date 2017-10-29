@@ -1,138 +1,324 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!--
+  Copyright 2012 The Android Open Source Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
 
-          http://www.apache.org/licenses/LICENSE-2.0
+      http://www.apache.org/licenses/LICENSE-2.0
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
 
-  <!-- Base themes -->
-  <style name="FileManager.Theme.Holo.Light" parent="@android:style/Theme.Holo.Light">
-    <item name="android:windowBackground">@color/default_background</item>
-    <item name="android:actionBarStyle">@style/FileManager.Widget.ActionBar.White</item>
-    <item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_light</item>
-  </style>
-  <style name="FileManager.Theme.Holo" parent="@android:style/Theme.Holo">
-    <item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_light</item>
+<resources>
+    <style name="menu_labels_style_light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- appCompat -->
+    <!-- light -->
+    <style name="appCompatLight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="popup">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="toolbar_theme">@style/overflow_white1</item>
+
+    </style>
+    <style name="overflow_white1" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="actionModeStyle">@style/custom_action_mode_light</item>
+        <item name="android:actionModeStyle">@style/custom_action_mode_light</item>
+
+    </style>
+    <style name="custom_action_mode_light" parent="Widget.AppCompat.ActionMode">
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="background">@color/holo_dark_action_mode</item>
+        <item name="android:background">@color/holo_dark_action_mode</item>
+    </style>
+
+    <!-- dark -->
+    <style name="appCompatDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="popup">@style/Theme.AppCompat</item>
+        <item name="toolbar_theme">@style/overflow_white2</item>
+    </style>
+
+    <!-- about activity -->
+    <style name="aboutLight" parent="appCompatLight">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!-- about activity dark -->
+    <style name="aboutDark" parent="appCompatDark">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="overflow_white2" parent="Theme.AppCompat">
+
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="actionModeStyle">@style/custom_action_mode_dark</item>
+        <item name="android:actionModeStyle">@style/custom_action_mode_dark</item>
+    </style>
+
+    <style name="custom_action_mode_dark" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/holo_dark_action_mode</item>
+        <item name="android:background">@color/holo_dark_action_mode</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="expanded_appbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">48sp
+        </item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="collapsed_appbar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="pref_accent_light_red" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+    <style name="pref_accent_light_pink" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_pink</item>
+    </style>
+    <style name="pref_accent_light_purple" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_purple</item>
+    </style>
+    <style name="pref_accent_light_deep_purple" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_deep_purple</item>
+    </style>
+    <style name="pref_accent_light_indigo" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_indigo</item>
+    </style>
+    <style name="pref_accent_light_blue" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_blue</item>
+    </style>
+    <style name="pref_accent_light_light_blue" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_light_blue</item>
+    </style>
+    <style name="pref_accent_light_cyan" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_cyan</item>
+    </style>
+    <style name="pref_accent_light_teal" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_teal</item>
+    </style>
+    <style name="pref_accent_light_green" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_green</item>
+    </style>
+    <style name="pref_accent_light_light_green" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_light_green</item>
+    </style>
+    <style name="pref_accent_light_amber" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_amber</item>
+    </style>
+    <style name="pref_accent_light_orange" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_orange</item>
+    </style>
+    <style name="pref_accent_light_deep_orange" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_deep_orange</item>
+    </style>
+    <style name="pref_accent_light_brown" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_brown</item>
+    </style>
+    <style name="pref_accent_light_black" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_black</item>
+    </style>
+    <style name="pref_accent_light_blue_grey" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_blue_grey</item>
+    </style>
+    <style name="pref_accent_light_super_su" parent="appCompatLight">
+        <item name="colorAccent">@color/accent_super_su</item>
+    </style>
+
+
+    <!-- dark -->
+    <style name="pref_accent_dark_red" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+    <style name="pref_accent_dark_pink" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_pink</item>
+    </style>
+    <style name="pref_accent_dark_purple" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_purple</item>
+    </style>
+    <style name="pref_accent_dark_deep_purple" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_deep_purple</item>
+    </style>
+    <style name="pref_accent_dark_indigo" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_indigo</item>
+    </style>
+    <style name="pref_accent_dark_blue" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_blue</item>
+    </style>
+    <style name="pref_accent_dark_light_blue" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_light_blue</item>
+    </style>
+    <style name="pref_accent_dark_cyan" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_cyan</item>
+    </style>
+    <style name="pref_accent_dark_teal" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_teal</item>
+    </style>
+    <style name="pref_accent_dark_green" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_green</item>
+    </style>
+    <style name="pref_accent_dark_light_green" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_light_green</item>
+    </style>
+    <style name="pref_accent_dark_amber" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_amber</item>
+    </style>
+    <style name="pref_accent_dark_orange" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_orange</item>
+    </style>
+    <style name="pref_accent_dark_deep_orange" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_deep_orange</item>
+    </style>
+    <style name="pref_accent_dark_brown" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_brown</item>
+    </style>
+    <style name="pref_accent_dark_black" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_black</item>
+    </style>
+    <style name="pref_accent_dark_blue_grey" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_blue_grey</item>
+    </style>
+    <style name="pref_accent_dark_super_su" parent="appCompatDark">
+        <item name="colorAccent">@color/accent_super_su</item>
+    </style>
+
+  <style name="MD_Light" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="md_divider">@color/md_divider_black</item>
+    <item name="md_list_selector">@drawable/md_selector</item>
+    <item name="md_btn_stacked_selector">@drawable/md_selector</item>
+    <item name="md_btn_positive_selector">@drawable/md_btn_selector</item>
+    <item name="md_btn_neutral_selector">@drawable/md_btn_selector</item>
+    <item name="md_btn_negative_selector">@drawable/md_btn_selector</item>
+
+    <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+    <item name="android:backgroundDimEnabled">true</item>
   </style>
 
-  <!-- A theme with overlay -->
-  <style name="FileManager.Theme.Holo.Light.Overlay" parent="@style/FileManager.Theme.Holo.Light">
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@color/black_transparent</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">true</item>
-    <item name="android:backgroundDimEnabled">false</item>
-  </style>
-  <style name="FileManager.Theme.Holo.Overlay" parent="@style/FileManager.Theme.Holo">
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@color/black_transparent</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">true</item>
-    <item name="android:backgroundDimEnabled">false</item>
+  <style name="MD_Dark" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="md_divider">@color/md_divider_white</item>
+    <item name="md_list_selector">@drawable/md_selector_dark</item>
+    <item name="md_btn_stacked_selector">@drawable/md_selector_dark</item>
+    <item name="md_btn_positive_selector">@drawable/md_btn_selector_dark</item>
+    <item name="md_btn_neutral_selector">@drawable/md_btn_selector_dark</item>
+    <item name="md_btn_negative_selector">@drawable/md_btn_selector_dark</item>
+
+    <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+    <item name="android:backgroundDimEnabled">true</item>
   </style>
 
-  <!-- Action bar -->
-  <style name="FileManager.Widget.ActionBar.White" parent="@android:style/Widget.Holo.Light.ActionBar">
-    <item name="android:titleTextStyle">@style/primary_text_appearance</item>
-    <item name="android:background">@color/default_background</item>
-    <item name="android:backgroundStacked">@color/default_background</item>
-    <item name="android:backgroundSplit">@color/default_background</item>
+  <style name="MD_ActionButtonStacked" parent="@style/MD_ActionButton">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:paddingLeft">@dimen/md_button_padding_horizontal_internalexternal</item>
+    <item name="android:paddingStart">@dimen/md_button_padding_horizontal_internalexternal
+    </item>
+    <item name="android:paddingRight">@dimen/md_button_padding_horizontal_internalexternal
+    </item>
+    <item name="android:paddingEnd">@dimen/md_button_padding_horizontal_internalexternal</item>
   </style>
 
-  <!-- Title -->
-  <style name="title_text_appearance">
-    <item name="android:textSize">@dimen/title_text_size</item>
-    <item name="android:textColor">@color/black_transparent</item>
-    <item name="android:textStyle">bold</item>
+  <style name="MD_ActionButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">@dimen/md_button_height</item>
+    <item name="android:layout_gravity">center_vertical</item>
   </style>
 
-  <!-- The text appearance for principal information (text that need to be highlighted) -->
-  <style name="primary_text_appearance">
-    <item name="android:textSize">@dimen/primary_text_size</item>
-    <item name="android:textColor">@color/black_transparent</item>
-    <item name="android:textStyle">bold</item>
-  </style>
-  <!-- The text appearance for principal information (important but not highlight) -->
-  <style name="primary_text_appearance_nohighlight" parent="@style/primary_text_appearance">
-    <item name="android:textStyle">normal</item>
-  </style>
-  <!-- The text appearance for secondary information (text with a lower importance) -->
-  <style name="secondary_text_appearance">
-    <item name="android:textSize">@dimen/secondary_text_size</item>
-    <item name="android:textColor">@color/black_transparent</item>
-    <item name="android:textStyle">normal</item>
-  </style>
-  <!-- The text appearance for hexeditor -->
-  <style name="hexeditor_text_appearance">
-    <item name="android:textSize">@dimen/hexeditor_text_size</item>
-    <item name="android:textColor">@color/black_transparent</item>
-    <item name="android:textStyle">normal</item>
-  </style>
-  <!-- The text appearance for a console widget -->
-  <style name="console_text_appearance">
-    <item name="android:textSize">@dimen/console_text_size</item>
-    <item name="android:textColor">@color/console_fg</item>
-    <item name="android:textStyle">normal</item>
-  </style>
-  <!-- The text appearance for dialog titles -->
-  <style name="dialog_title_text_appearance">
-    <item name="android:textSize">@dimen/dialog_title_text_size</item>
-    <item name="android:textColor">@android:color/holo_blue_dark</item>
-    <item name="android:textStyle">bold</item>
-  </style>
-
-  <!-- Breadcrumb Element -->
-  <style name="breadcrumb_elemement">
-    <item name="android:gravity">center|center_vertical</item>
-  </style>
-
-  <!-- Breadcrumb Item -->
-  <style name="breadcrumb_item" parent="@style/breadcrumb_elemement">
-    <item name="android:textAppearance">@style/primary_text_appearance</item>
+  <style name="MD_ActionButton.Text">
+    <item name="android:textSize">@dimen/md_button_textsize</item>
     <item name="android:singleLine">true</item>
-    <item name="android:paddingLeft">@dimen/breadcrumb_item_margin_space</item>
-    <item name="android:paddingRight">@dimen/breadcrumb_item_margin_space</item>
-    <item name="android:minWidth">@dimen/breadcrumb_item_min_size</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:gravity">center</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:background">@null</item>
+    <item name="android:minWidth">@dimen/md_button_min_width</item>
+    <item name="android:paddingLeft">@dimen/md_button_textpadding_horizontal</item>
+    <item name="android:paddingRight">@dimen/md_button_textpadding_horizontal</item>
   </style>
 
-  <!-- Breadcrumb ActionBar Buttom -->
-  <style name="breadcrumb_actionbar_buttom">
-    <item name="android:paddingLeft">@dimen/extra_margin</item>
-    <item name="android:paddingRight">@dimen/default_margin</item>
+  <style name="MD_WindowAnimation">
+    <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+    <item name="android:windowExitAnimation">@anim/popup_exit</item>
   </style>
 
-  <!-- Navigation Grid Layout -->
-  <style name="navigation_grid">
-    <item name="android:numColumns">@integer/default_grid_columns</item>
-    <item name="android:stretchMode">columnWidth</item>
-    <item name="android:horizontalSpacing">@dimen/default_horizontal_grid_spacing</item>
-    <item name="android:verticalSpacing">@dimen/default_vertical_grid_spacing</item>
-  </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
 
-  <!-- Horizontal Divider -->
-  <style name="horizontal_divider">
-    <item name="android:layout_marginTop">@dimen/default_margin</item>
-    <item name="android:layout_marginBottom">@dimen/default_margin</item>
-    <item name="android:background">@color/divider_color_light</item>
-  </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding">
+        <item name="android:minHeight">4dp</item>
+        <item name="android:maxHeight">4dp</item>
+    </style>
 
-  <!-- Vertical Divider -->
-  <style name="vertical_divider">
-    <item name="android:layout_marginLeft">@dimen/default_margin</item>
-    <item name="android:layout_marginRight">@dimen/default_margin</item>
-    <item name="android:background">@color/divider_color</item>
-  </style>
+    <style name="Widget.MaterialProgressBar.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:maxWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:maxHeight">48dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.NoPadding">
+        <item name="android:minWidth">42dp</item>
+        <item name="android:maxWidth">42dp</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:maxHeight">42dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Large">
+        <item name="android:minWidth">76dp</item>
+        <item name="android:maxWidth">76dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:maxHeight">76dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Large.NoPadding">
+        <item name="android:minWidth">66.5dp</item>
+        <item name="android:maxWidth">66.5dp</item>
+        <item name="android:minHeight">66.5dp</item>
+        <item name="android:maxHeight">66.5dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Small">
+        <item name="android:minWidth">16dp</item>
+        <item name="android:maxWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="Widget.MaterialProgressBar.ProgressBar.Small.NoPadding">
+        <item name="android:minWidth">14dp</item>
+        <item name="android:maxWidth">14dp</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
 
 </resources>
