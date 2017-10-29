@@ -1,806 +1,607 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+<!--
+    Copyright (C) 2014-2017 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>
 
-          http://www.apache.org/licenses/LICENSE-2.0
+    This file is part of Amaze File Manager.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-  <!-- The name of the app -->
-  <string name="app_name">FileManager</string>
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  <!-- Human readable sizes -->
-  <string name="size_bytes">B</string>
-  <string name="size_kilobytes">kB</string>
-  <string name="size_megabytes">MB</string>
-  <string name="size_gigabytes">GB</string>
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
 
-  <!-- Date/time format order (%1$s: date; %2$s: time) -->
-  <string name="datetime_format_order">%1$s %2$s</string>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">FileManager</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="books">Bookmarks</string>
+    <string name="icon">icon</string>
+    <string name="efn">Enter File Name</string>
+    <string name="storage">Storage</string>
+    <string name="gallery">Gallery</string>
+    <string name="apps">App Manager</string>
+    <string name="ftp">FTP Server</string>
+    <string name="bookmanag">Bookmarks Manager</string>
+    <string name="setting">Settings</string>
+    <string name="select">Select Item</string>
+    <string name="pressagain">Press  again to exit</string>
+    <string name="open">Open</string>
+    <string name="backup">Backup</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="play">Play store</string>
+    <string name="properties">Properties</string>
+    <string name="copyingapk">Copying apk to </string>
+    <string name="addbook">Add Bookmark</string>
+    <string name="delbook">Delete Bookmark</string>
+    <string name="addtobook">Add to Bookmark</string>
+    <string name="enterpath">Enter Path</string>
+    <string name="cancel">CANCEL</string>
+    <string name="create">CREATE</string>
+    <string name="success">Success</string>
+    <string name="filenotexists">File Not Exists</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="file_empty">File is empty</string>
+    <string name="error">Error</string>
+    <string name="cantlistfiles">Can\'t list files without root</string>
+    <string name="searchresults">Search Results of </string>
+    <string name="itemsselected">Items Selected</string>
+    <string name="newhomedirectory">New Home Directory</string>
+    <string name="rename">Rename</string>
+    <string name="save">Save</string>
+    <string name="renameerror">Rename Unsuccessful</string>
+    <string name="renamed">Rename Successful</string>
+    <string name="bookmarksadded">Bookmarks Added</string>
+    <string name="fileexist">File with same name already exists </string>
+    <string name="filecreated">File Created</string>
+    <string name="searchpath">Search Path</string>
+    <string name="enterfile">Enter File Name</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="size_capitalized">Size</string>
+    <string name="size">size of folder</string>
+    <string name="totalitems">Total Items</string>
+    <string name="enterzipname">Enter Zip Name</string>
+    <string name="noappfound">No App found to open this file</string>
+    <string name="copying">Copying</string>
+    <string name="moving">Moving</string>
+    <string name="add">Add</string>
+    <string name="tab">Tab</string>
+    <string name="file">File</string>
+    <string name="folder">Folder</string>
+    <string name="newfolder">New Folder</string>
+    <string name="entername">Enter Name</string>
+    <string name="extracting">Extracting</string>
+    <string name="stopping">Stopping</string>
+    <string name="guide1">Welcome to the FileManager</string>
+    <string name="guide2">Touch the blue strip to show or hide PathBar</string>
+    <string name="guide3">Touch and hold any file for more options</string>
+    <string name="guide4">Like copy,move,properties etc</string>
+    <string name="guide5">Use Back Button of your device to exit app anytime&#8230;</string>
+    <string name="guide6">..And use left arrow button for navigation in filemanager</string>
+    <string name="maintab">Main Tab can\'t be removed</string>
+    <string name="openparent">Open Parent Directory</string>
+    <string name="openwith">Open with</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
+    <string name="extract">Extract</string>
+    <string name="compress">Compress</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dialog_delete_category_directories">Directories</string>
+    <string name="dialog_delete_category_files">Files</string>
+    <string name="dialog_delete_disclaimer">Deleting the items below will permanently remove them from your device and they cannot be recovered.</string>
+    <string name="dialog_delete_title">Delete items permanently?</string>
+    <string name="deleting">Deleting</string>
+    <string name="questionset">Do you want to set current path as home for this tab?</string>
+    <string name="viewmode">View Mode</string>
+    <string name="uimode">UI Mode</string>
+    <string name="directorysort">Directory Sort Mode</string>
+    <string name="sortby">Sort By</string>
+    <string name="theme">Theme</string>
+    <string name="skin">Skin</string>
+    <string name="random">Random Skin</string>
+    <string name="random_summary">Sets random primary color at startup</string>
+    <string name="colorize">Colorize Icons</string>
+    <string name="colorize_summary">Sets static icon color. Doesn\'t override directory icon color preference.</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="paste">Paste</string>
+    <string name="close">Close</string>
+    <string name="history">History</string>
+    <string name="refresh">Refresh</string>
+    <string name="copy">Copy</string>
+    <string name="mountsystemsummary">Enable this if you want to edit System Files</string>
+    <string name="mountsystem">Mount System Folders as Writable</string>
+    <string name="rootfailure">Root Access not granted</string>
+    <string name="hiddenfailure">Can\'t access hidden files</string>
+    <string name="selectall">Select All</string>
+    <string name="delete">Delete</string>
+    <string name="setashome">Set As Home</string>
+    <string name="sethome">Set Home Directory</string>
+    <string name="foldercolor">Folder Color</string>
+    <string name="imagegallery">Image Gallery</string>
+    <string name="fileexplorer">File Explorer</string>
+    <string name="changegallerypath">Change Gallery Path</string>
+    <string name="usedefaultgallerypath">Use Default Image Gallery Path</string>
 
-  <!-- Devices types -->
-  <string name="device_blockdevice">Block device</string>
-  <string name="device_characterdevice">Character device</string>
-  <string name="device_namedpipe">Named pipe</string>
-  <string name="device_domainsocket">Domain socket</string>
+    <!-- New -->
+    <!-- Array -->
 
-  <!-- Mount Point States -->
-  <string name="mount_point_readonly">RO</string>
-  <string name="mount_point_readwrite">RW</string>
+    <!-- UI -->
+    <string name="simple">Simple UI</string>
+    <string name="card">Card UI</string>
+    <!-- Theme -->
+    <string name="light">Material Light</string>
+    <string name="dark">Material Dark</string>
+    <string name="daytime">Daytime</string>
+    <!--Skin-->
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="purple">Purple</string>
+    <string name="deep_purple">Deep Purple</string>
+    <string name="indigo">Indigo</string>
+    <string name="blue">Blue</string>
+    <string name="light_blue">Light Blue</string>
+    <string name="cyan">Cyan</string>
+    <string name="teal">Teal</string>
+    <string name="green">Green</string>
+    <string name="light_green">Light Green</string>
+    <string name="amber">Amber</string>
+    <string name="orange">Orange</string>
+    <string name="deep_orange">Deep Orange</string>
+    <string name="brown">Brown</string>
+    <string name="black">Black</string>
+    <string name="blue_grey">Blue Grey</string>
+    <string name="supersu">SuperSU</string>
+    <!--DirectorySortMode-->
+    <string name="foldersOnTop">Folders On Top</string>
+    <string name="filesOnTop">Files On Top</string>
+    <string name="noneOnTop">None On Top</string>
+    <!--SortBy-->
+    <string name="sortName">Name</string>
+    <string name="lastModified">Last Modified</string>
+    <string name="sortSize">Size</string>
+    <string name="sortNameDesc">Name (Desc)</string>
+    <string name="lastModifiedDesc">Last Modified (Desc)</string>
+    <string name="sortSizeDesc">Size (Desc)</string>
+    <!--ListMode-->
+    <string name="detailedView">Detailed View</string>
+    <string name="simpleView">Simple View</string>
+    <!--Folder-->
+    <string name="Yellow">Yellow</string>
+    <string name="pick_a_file">Pick a file</string>
+    <string name="process_viewer">Process Viewer</string>
+    <string name="in_safe">Insufficient space</string>
+    <string name="no_file_overwrite">No File Overwritten</string>
+    <string name="skip">Skip</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="cant_read_file">Can\'t read file</string>
+    <string name="not_allowed">Not Allowed</string>
+    <string name="processes">Processes</string>
+    <string name="searching">Searching</string>
+    <string name="copying_fles">Copying Files</string>
+    <string name="done">Done</string>
+    <string name="Extracting_fles">Extracting Files</string>
+    <string name="set">Set</string>
+    <string name="enablerootmde">Enable Root Mode</string>
+    <string name="goback">Go Back</string>
+    <string name="foldercreated">Folder Created</string>
+    <string name="newfile">New File</string>
+    <string name="nofiles">No Files</string>
+    <string name="tapnhold">Tap and hold on a File or Folder for more options</string>
+    <string name="pathcopied">Path copied to clipboard</string>
+    <string name="used">used space</string>
+    <string name="used_by_others">used by others</string>
+    <string name="free">free space</string>
+    <string name="atroot">You are at the root</string>
+    <string name="listview">List View</string>
+    <string name="gridview">Grid View</string>
+    <string name="setlistview">Setting ListView</string>
+    <string name="setgridview">Setting GridView</string>
+    <string name="permission">Permissions</string>
+    <string name="hide">Hide</string>
+    <string name="exit">Exit</string>
+    <string name="enternewname">Enter new name</string>
+    <string name="doforall">Do for all items</string>
+    <string name="gridcolumnno">Number of columns in grid view</string>
+    <string name="randomDialog">Random</string>
+    <string name="setRandom">Changes will take place after you restart the app</string>
+    <string name="authors">Authors</string>
+    <string name="changelog">Changelog</string>
+    <string name="fullChangelog">Full Changelog</string>
+    <string name="ok">OK</string>
+    <string name="chooseUI">Choose Item UI</string>
+    <string name="ui">Interface</string>
+    <string name="general">General</string>
+    <string name="thumbSummary">Show Thumbnails of apps and images</string>
+    <string name="thumb">Show Thumbnails</string>
+    <string name="hidden">Show Hidden Files and Folders</string>
+    <string name="lastModifiedSummary">Show the date and time when the file was modified last time</string>
+    <string name="lastModifiedPref">Show Last Modified</string>
+    <string name="sizePrefSummary">Show size of files and number of items in folders</string>
+    <string name="sizePref">Show Sizes</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="rootPrefSummary">Show Permissions of Files and Folders</string>
+    <string name="rootPref">Show Permissions</string>
+    <string name="aboutFileManager">About FileManager</string>
+    <string name="version">Version</string>
+    <string name="rate">Rate the app</string>
+    <string name="license">Open Source Licenses</string>
+    <string name="feedback">Send Feedback</string>
+    <string name="hiddenfiles">Hidden Files</string>
+    <string name="type">Type</string>
+    <string name="typeDesc">Type (Desc)</string>
+    <string name="rootdirectory">Root</string>
+    <string name="new_string">New</string>
+    <string name="setringtone">Set as ringtone</string>
+    <string name="copy_path">Copy Path</string>
+    <string name="addshortcut">Add Shortcut</string>
+    <string name="unsavedchanges">Unsaved Changes</string>
+    <string name="unsavedchangesdesc">You have unsaved changes, do you want to save them before exiting?</string>
+    <string name="saving">Saving</string>
+    <string name="packageinstaller">Package Installer</string>
+    <string name="view">View</string>
+    <string name="install">Install</string>
+    <string name="archive">Archive</string>
+    <string name="archtext">This is an archive. What action would you like to perform?</string>
+    <string name="pitext">This is a package installer. What action would you like to perform?</string>
+    <string name="invalid_dir">Invalid Directory</string>
+    <string name="circularimages">Use circular icons for images and videos</string>
+    <string name="circularicons">Use circular icons</string>
+    <string name="back_title">Back navigation</string>
+    <string name="back_summary">Enables custom back navigation at top of the list</string>
+    <string name="details">Details</string>
+    <string name="translators">Translators</string>
+    <string name="german_translation_title">German</string>
+    <string name="italian_translation_title">Italian</string>
+    <string name="french_translation_title">French</string>
+    <string name="russian_translation_title">Russian</string>
+    <string name="spanish_translation_title">Spanish</string>
+    <string name="basque_translation_title">Basque</string>
+    <string name="chinese_translation_title">Chinese</string>
+    <string name="serbian_translation_title">Serbian</string>
+    <string name="turkish_translation_title">Turkish</string>
+    <string name="ukrainian_translation_title">Ukrainian</string>
+    <string name="portuguese_translation_title">Portuguese</string>
+    <string name="polish_translation_title">Polish</string>
+    <string name="korean_translation_title">Korean</string>
+    <string name="greek_translation_title">Greek</string>
+    <string name="dutch_translation_title">Dutch</string>
+    <string name="romanian_translation_title">Romanian</string>
+    <string name="vietnamese_translation_title">Vietnamese</string>
+    <string name="japanese_translation_title">Japanese</string>
+    <string name="brazilian_portuguese_translation_title">Brazilian portuguese</string>
+    <string name="tamil_translation_title">Tamil</string>
 
-  <!-- Default buttons -->
-  <string name="ok" translatable="false">@android:string/ok</string>
-  <string name="cancel" translatable="false">@android:string/cancel</string>
-  <string name="yes">Yes</string>
-  <string name="no">No</string>
-  <string name="all">All</string>
-  <string name="overwrite">Overwrite</string>
-  <string name="select">Select</string>
+    <string name="zip_viewer">Zip Viewer</string>
+    <string name="unin_system_apk">This is a system app, deleting it might lead to system un-stability.\nProceed?</string>
+    <string name="warning">Warning</string>
+    <string name="donate">Donate</string>
+    <string name="archive_preferences">Archive Preferences</string>
+    <string name="archive_extract_folder">Archive Extract Folder</string>
+    <string name="zip_create_folder">Zip Create Folder</string>
+    <string name="archive_summary">Archive files will be extracted to this folder. Default value is the directory in which archive is present.</string>
+    <string name="zip_summary">New zip files will be created in this folder. Default value is the directory in which files are present.</string>
+    <string name="openas">Open As</string>
+    <string name="text">Text</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="other">Other</string>
+    <string name="image">Image</string>
+    <string name="contributors">Contributors</string>
+    <string name="savepaths">Remember paths</string>
+    <string name="savepathsummary">When starting up, the most recently viewed folder for each tab will be displayed</string>
+    <string name="select_intent">Select</string>
+    <string name="md5copied">MD5 copied to clipboard</string>
+    <string name="generating">Generating..</string>
+    <string name="tables">Table(s)</string>
+    <string name="database">Database</string>
+    <string name="colourednavigation">Colored Navigation bar</string>
+    <string name="colourednavigationsum">Whether or not the system navigation bar is colored with the skin</string>
 
-  <!-- The root directory name -->
-  <string name="root_directory_name"><![CDATA[<Root folder>]]></string>
-  <!-- The search result name -->
-  <string name="search_result_name">Search: <xliff:g id="terms">%1$s</xliff:g></string>
+    <string name="sd_card_grant_next">sd_card_grant_next</string>
+    <string name="sd_card_grant_first">sd_card_grant_first</string>
+    <string name="fab_skin">FAB skin</string>
+    <string name="gplus_pic_title">Sign-In with G+</string>
+    <string name="gplus_pic_summary">Show G+ cover pic in drawer</string>
+    <string name="icon_credits">Graphics by &lt;a href="http://cookicons.co/">CookIcons&lt;/a></string>
 
-  <!-- Loading waiting message -->
-  <string name="loading_message">Loading\u2026</string>
-  <!-- Computing message -->
-  <string name="computing_message" translatable="false"><xliff:g id="data">%1$s</xliff:g></string>
-  <!-- Computing new line message -->
-  <string name="computing_message_ln" translatable="false"><xliff:g id="data">%1$s</xliff:g></string>
-  <!-- Cancelled message -->
-  <string name="cancelled_message">Cancelled.</string>
-  <!-- Error message -->
-  <string name="error_message">Error.</string>
-  <!-- Copy text content description -->
-  <string name="copy_text_cd">Tap to copy text to clipboard</string>
-  <!-- Copy text content message -->
-  <string name="copy_text_msg">Text copied to clipboard</string>
+    <string name="color_title">Color</string>
+    <string name="color_summary">Set color to various UI components</string>
+    <string name="primary_color_title">Primary Color (Left Tab)</string>
+    <string name="primary_color_summary">Set color to large UI elements for the left tab</string>
+    <string name="accent_color_title">Accent Color</string>
+    <string name="accent_color_summary">Set color to FAB and other small UI elements</string>
+    <string name="icon_color_title">Icon Color</string>
+    <string name="icon_color_summary">Set color to icons</string>
+    <string name="hide_mode_title">Hide Mode</string>
+    <string name="none">None</string>
+    <string name="hide_toolbar">Hide Toolbar</string>
+    <string name="hide_appbar">Hide whole App bar</string>
+    <string name="choose_color">Choose color</string>
+    <string name="g_plus_community_title">Join G+ Community</string>
+    <string name="hide_mode_nothing">App bar remains intact</string>
+    <string name="hide_mode_toolbar">Toolbar hides on scroll</string>
+    <string name="hide_mode_app_bar">App bar hides on scroll</string>
+    <string name="no_cover_photo">No cover photo</string>
+    <string name="files">Files</string>
+    <string name="directories">Directories</string>
+    <string name="textreader">Text Reader</string>
+    <string name="databasereader">Database Reader</string>
+    <string name="showDividers">Show Dividers</string>
+    <string name="topFab">FAB on App bar</string>
+    <string name="topFabS">Whether + button should be at the top or bottom. Only applicable if app bar doesn\'t hide.</string>
+    <string name="needsaccess">Write Access Required</string>
+    <string name="needsaccesssummary">Please choose the root directory of \t</string>
+    <string name="needsaccesssummary1">\tto grant write access to operate </string>
+    <string name="smb_con">SMB Connection</string>
+    <string name="smb_server">Server IP Address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="extstorage">External Storage</string>
+    <string name="folders">Folders</string>
+    <string name="videos">Videos</string>
+    <string name="apks">Apks</string>
+    <string name="documents">Documents</string>
+    <string name="images">Images</string>
+    <string name="clear">Clear</string>
+    <string name="md5">MD5</string>
+    <string name="md5_2">Copy md5</string>
+    <string name="total">Total:</string>
+    <string name="calculating"> calculating </string>
+    <string name="sort">Sort</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="defualt">Default</string>
+    <string name="doit">Do it</string>
+    <string name="wanthelp"><u>Need help?</u></string>
+    <string name="quick">Quick access</string>
+    <string name="recent">Recent files</string>
+    <string name="edit">Edit</string>
+    <string name="find">Find in page</string>
+    <string name="grant">Grant</string>
+    <string name="grantper">Grant permission</string>
+    <string name="grantfailed">Permission not granted</string>
+    <string name="granttext">App needs storage permission to continue. Canceling this dialog will exit the app.</string>
+    <string name="grantgplus">App needs permission for this feature. Canceling this dialog will uncheck this feature.</string>
+    <string name="operationunsuccesful">Operation Unsuccessful</string>
+    <string name="creatingfile">Creating File</string>
+    <string name="creatingfolder">Creating Folder</string>
+    <string name="renaming">Renaming</string>
+    <string name="cantbeempty">%s cannot be empty</string>
+    <string name="ip">Address</string>
+    <string name="connectionname">Connection name</string>
+    <string name="nodevicefound">No device found</string>
+    <string name="path">Path</string>
+    <string name="renamebookmark">Modify Bookmark</string>
+    <string name="cut">Cut</string>
+    <string name="empty"></string>
+    <string name="search">Search</string>
+    <string name="invalid_name">Invalid Name</string>
+    <string name="search_hint">Type to search&#8230;</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="regular_expression">Regular Expression</string>
+    <string name="regular_expression_summary">Search using a BASH style regular expression</string>
+    <string name="match_content">Match content</string>
+    <string name="match_content_summary">If set, regular expression will be matched with entire file name,
+        will look for occurrence otherwise.</string>
+    <string name="start_ftp">Start</string>
+    <string name="stop_ftp">Stop</string>
+    <string name="ftp_status_running">Running</string>
+    <string name="ftp_status_not_running">Not Running</string>
+    <string name="ftp_no_wifi">Make sure you\'re connected to WiFi</string>
+    <string name="domain">Domain</string>
+    <string name="invalid">Invalid %s</string>
+    <string name="primary_two_title">Primary Color (Right Tab)</string>
+    <string name="primary_two_summary">Set color to large UI elements for the right tab</string>
+    <string name="g_plus">Google Plus</string>
+    <string name="support_development">Support Development</string>
+    <string name="report_bugs_title">Report Bugs</string>
+    <string name="report_bugs_summary">Report bugs or request new feature</string>
+    <string name="translate_title">Translate</string>
+    <string name="translate_summary">Translate Amaze in your language</string>
+    <string name="g_plus_community_summary">Take part in beta testing and discussions
+        related to development</string>
+    <string name="easter_egg_title">Studio Mode</string>
+    <string name="paypal_copy_message">Paypal id copied to clipboard</string>
+    <string name="searchingdevices">Searching for devices</string>
+    <string name="use_custom_ip">Use custom IP</string>
+    <string name="bookmark_lost">Bookmark not found, recreating&#8230;</string>
+    <string name="share_limit">Can\'t share more than 100 files</string>
+    <string name="otg_access">Select the root of OTG device</string>
+    <string name="no_profile_pic">No G+ profile picture</string>
+    <string name="opening">Opening..</string>
+    <string name="information">Information</string>
+    <!-- reference to file accessed date -->
+    <string name="accessed">Accessed</string>
+    <!-- reference to file modified date -->
+    <string name="modified">Modified</string>
 
-  <!-- Warning dialog title -->
-  <string name="warning_title">Warning</string>
-  <!-- Error dialog title -->
-  <string name="error_title">Error detected</string>
-  <!-- Confirm operation dialog title -->
-  <string name="confirm_operation">Confirm operation</string>
-  <!-- Confirm overwrite dialog title -->
-  <string name="confirm_overwrite">Confirm overwrite</string>
-  <!-- Confirm deletion dialog title -->
-  <string name="confirm_deletion">Confirm deletion</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="year">Year</string>
+    <string name="duration">Duration</string>
+    <string name="comment">Comment</string>
+    <!-- reference to audio/video file -->
+    <string name="container">Container</string>
+    <string name="codec">Codec</string>
+    <string name="channels">Channels</string>
+    <string name="sample_rate">Sample Rate</string>
+    <string name="bitrate">Bitrate</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="frame_rate">Frame Rate</string>
+    <string name="image_type">Image Type</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="date_modified">Date Modified</string>
+    <string name="software">Software</string>
+    <string name="creator">Creator</string>
+    <string name="camera_brand">Camera Brand</string>
+    <string name="camera_model">Camera Model</string>
+    <string name="date_taken">Date Taken</string>
+    <string name="exposure_time">Exposure Time</string>
+    <string name="aperture_value">Aperture Value</string>
+    <string name="image_iso">ISO Speed Rating</string>
+    <string name="flash_fired">Flash Fired</string>
+    <string name="focal_length">Focal Length</string>
+    <string name="document">Document</string>
+    <string name="subject">Subject</string>
+    <string name="author">Author</string>
+    <string name="keywords">Keywords</string>
+    <string name="producer">Producer</string>
+    <string name="created">Created</string>
+    <string name="format">Format</string>
+    <string name="pages">Number of Pages</string>
+    <!-- reference to a document file -->
+    <string name="optimized">Optimized</string>
+    <string name="security">Security</string>
+    <string name="paper_size">Paper Size</string>
 
-  <!--  A console couldn't be created. Ask the user to change the access mode. Dialog Title -->
-  <string name="msgs_change_to_prompt_access_mode_title">Confirm switch</string>
-  <!--  A console couldn't be created. Ask the user to change the access mode. Dialog Message -->
-  <string name="msgs_change_to_prompt_access_mode_msg">
-    Unable to run in Root Access mode. Changing to Safe mode.\n\nApply this change?</string>
+    <string name="root_error">Error starting an interactive root shell</string>
 
-  <!-- A console couldn't be created. Without privileges, the app won't work -->
-  <string name="msgs_cant_create_console">Unable to gain the required privileges to function.</string>
-  <!-- The message shown when an allocation of a privileged console fails, and a non
-       privileged is allocated -->
-  <string name="msgs_privileged_console_alloc_failed">Unable to run in Root Access mode.
-    Changing to Safe mode.</string>
-  <!-- The selected setting was not applied or stored -->
-  <string name="msgs_settings_save_failure">The setting could not be applied or stored.</string>
-  <!-- The initial directory has an invalid or inaccessible reference -->
-  <string name="msgs_settings_invalid_initial_directory">The initial folder
-    \"<xliff:g id="initial_dir">%1$s</xliff:g>\" is invalid. Changing to root folder.</string>
+    <!-- %s will be replaced with either copied or moved -->
+    <string name="copy_error">Some files weren\'t successfully %s</string>
+    <string name="copied">copied</string>
+    <string name="moved">moved</string>
+    <string name="process_chart_description">Progress</string>
+    <string name="copy_complete">Copy Complete</string>
+    <string name="move_complete">Move Complete</string>
+    <string name="waiting_title">Waiting</string>
+    <string name="waiting_content">Waiting for operation to complete</string>
+    <string name="extract_complete">Extraction complete</string>
+    <string name="compression_complete">Compression Complete</string>
+    <string name="compressing">Compressing</string>
+    <string name="cancelled">Cancelled</string>
+    <!-- reference to - 'Written #bytes out of #bytes' in process viewer -->
+    <string name="written">Written</string>
+    <string name="out_of">out of</string>
+    <!-- reference to - 'Processing file # of #' in process viewer -->
+    <string name="of">of</string>
+    <string name="processing_file">Processing file</string>
+    <string name="current_speed">Current Speed</string>
+    <string name="smb_launch_error">You will need to copy this file to storage to open it</string>
+    <string name="error_file_not_found">Error: File Not Found</string>
+    <string name="error_io">I/O Error</string>
+    <string name="error_root_not_permitted">Error: Root permission not granted</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="tap_and_hold_tips">Tap and hold on a File or Folder for more options</string>
+    <string name="permission_read">Read</string>
+    <string name="permission_write">Write</string>
+    <string name="permission_execute">Execute</string>
+    <string name="permission_owner">Owner</string>
+    <string name="permission_group">Group</string>
+    <string name="permission_other">Other</string>
+    <string name="clipboard_path_copy">Path copied to clipboard</string>
+    <string name="error_busybox">Busybox not found. Closing interactive shell.</string>
+    <string name="service_timer">Time Elapsed</string>
+    <string name="please_wait">Please Wait</string>
 
-  <!-- Success -->
-  <string name="msgs_success">The operation was completed successfully.</string>
-  <!-- Unknown error -->
-  <string name="msgs_unknown">An error was detected. The operation was unsuccessful.</string>
-  <!-- When an operation requires elevated privileged (normally caused for the use of a
-       non-privileged console) -->
-  <string name="msgs_insufficient_permissions">This operation requires elevated permissions. Try
-    changing to Root Access mode.</string>
-  <!-- The file or directory was not found -->
-  <string name="msgs_file_not_found">The file or folder was not found.</string>
-  <!-- The command reference couldn't be created (not found or invalid definition)
-       (normally caused by a development error) -->
-  <string name="msgs_command_not_found">The operation\'s command was not found or has an
-    invalid definition.</string>
-  <!-- I/O exception -->
-  <string name="msgs_io_failed">Read/write failure.</string>
-  <!-- Operation timeout detected -->
-  <string name="msgs_operation_timeout">The operation timed out.</string>
-  <!-- The operation returns an invalid exit code -->
-  <string name="msgs_operation_failure">The operation failed.</string>
-  <!-- A console couldn't be allocated -->
-  <string name="msgs_console_alloc_failure">An internal error occurred.</string>
-  <!-- An operation can't be cancelled -->
-  <string name="msgs_operation_can_not_be_cancelled">The operation cannot be cancelled.</string>
-  <!-- The operation requieres mount the file system prior to execute the command -->
-  <string name="msgs_read_only_filesystem">The file system is read-only. Try to mount the
-    file system as read-write before attempting the operation.</string>
-  <!-- Illegal argument (normally caused by a development error when calling internal api) -->
-  <string name="msgs_illegal_argument">Illegal argument. Invocation failed.</string>
-  <!-- The operation will cause inconsistencies -->
-  <string name="msgs_unresolved_inconsistencies">
-    The operation is not permitted because it would create inconsistencies.</string>
-  <!-- Operation not permitted in current directory -->
-  <string name="msgs_operation_not_allowed_in_current_directory">
-    The operation is not permitted in current folder.\n\nDestination folder cannot be subfolder
-    of source or be same as source.</string>
+    <string name="cloud_connection">Cloud Connection</string>
+    <string name="cloud_connection_new">New Cloud Connection</string>
+    <string name="cloud_dropbox">Dropbox</string>
+    <string name="cloud_drive">Google Drive</string>
+    <string name="cloud_onedrive">OneDrive</string>
+    <string name="cloud_box">Box</string>
+    <string name="cloud_get">Get Cloud plugin</string>
+    <!-- Reference to 'email address can't be empty' or 'Invalid e-mail address' -->
+    <string name="cloud_error_email">E-mail address</string>
+    <string name="cloud_email">E-mail ID</string>
 
-  <!-- The advice message prior to exit the app -->
-  <string name="msgs_push_again_to_exit">Press again to exit.</string>
+    <string name="no_applications">No applications</string>
+    <string name="ftp_path">Shared Path</string>
+    <string name="ftp_path_hint">Path to the root of directory to share</string>
+    <string name="error_ftp_path_file">Path not a directory</string>
+    <string name="change">Change</string>
+    <string name="unknown_error">Oops, something went wrong!</string>
 
-  <!-- There is no registered app that can handle the mime-type -->
-  <string name="msgs_not_registered_app">There is no app registered to handle
-    the type of file selected.</string>
+    <string name="ftp_path_change_success">FTP path changed successfully</string>
+    <string name="ftp_path_change_error_invalid">Invalid path</string>
+    <string name="ftp_status_no_connection">No Connection</string>
+    <string name="ftp_status_secure_connection">Secure Connection</string>
+    <string name="ftp_status_title">Status</string>
+    <string name="ftp_port">Port</string>
+    <string name="ftp_login">Login</string>
+    <string name="field_empty">Field can\'t be empty</string>
+    <string name="ftp_timeout">Idle timeout</string>
+    <string name="ftp_seconds">Seconds</string>
+    <string name="intellihide_toolbar_title">Intellihide Toolbar</string>
+    <string name="intellihide_toolbar_summary">Automatically hide toolbar while scrolling</string>
+    <string name="hash_sha256">SHA-256</string>
+    <!-- references 'name/size/location/hash' copied to clipboard -->
+    <string name="properties_copied_clipboard">copied to clipboard</string>
+    <string name="contributors_1_summary">Translation</string>
+    <string name="contributors_2_summary">Icon and banners</string>
+    <string name="contributors_3_summary">Theme Engine</string>
+    <string name="contributors_4_summary">Shade behind FAB</string>
+    <string name="contributors_5_summary">Color transition when swiping tabs</string>
+    <string name="contributors_6_summary">FTP Server</string>
+    <string name="contributors_7_summary">Firing up an interactive shell</string>
+    <string name="connection_exists">Connection already exists</string>
 
-  <!-- Overwrite files? -->
-  <string name="msgs_overwrite_files">
-    Some of the files already exist in the destination folder.\n\nOverwrite?</string>
+    <string name="crypt_encrypting">Encrypting</string>
+    <string name="crypt_decrypting">Decrypting</string>
+    <!-- references to 'Some files weren't successfully %s -->
+    <string name="crypt_encrypted">Encrypted</string>
+    <string name="crypt_decrypted">Decrypted</string>
+    <string name="crypt_encrypt">Encrypt</string>
+    <string name="crypt_decrypt">Decrypt</string>
+    <string name="operation_fail_following">Operation failed for following files</string>
+    <string name="crypt_pref_master_password_title">Master Password</string>
+    <string name="crypt_pref_master_password_summary">Set a master password for encryption.
+        Leave empty to remove.</string>
+    <string name="crypt_pref_fingerprint_title">Fingerprint</string>
+    <string name="crypt_pref_fingerprint_summary">Use fingerprint to authenticate encryption</string>
+    <string name="crypt_fingerprint_no_permission">Fingerprint permissions missing</string>
+    <string name="crypt_fingerprint_not_enrolled">No fingerprint enrolled</string>
+    <string name="crypt_fingerprint_no_security">No lockscreen security found</string>
+    <string name="crypt_warning_key">Be advised, when you change your security pattern from
+        System settings, you won\'t be able to decrypt this content.</string>
+    <string name="warning_never_show">Don\'t inform again</string>
+    <string name="warning_confirm">Got it!</string>
+    <string name="crypt_encryption_fail">Failed to encrypt</string>
+    <string name="crypt_decryption_fail">Failed to decrypt</string>
+    <string name="crypt_decryption_fail_password">Wrong password!</string>
+    <string name="crypt_fingerprint_authenticate">Touch sensor to continue</string>
+    <string name="authenticate_password">Enter password</string>
 
-  <!-- The association of an action to the app failed -->
-  <string name="msgs_action_association_failed">Associating the action to the
-    app failed.</string>
+    <string name="sidebarfolders_title">Sidebar shortcuts</string>
+    <string name="sidebarquickaccess_title">Sidebar quick access</string>
+    <string name="showfolders_pref_title">Show shortcuts</string>
+    <string name="showfolders_pref">Shortcuts</string>
+    <string name="showquickaccess_pref_title">Show quick accesses</string>
+    <string name="showquickaccess_pref">Quick accesses</string>
+    <string name="create_shortcut">Create shortcut</string>
+    <string name="edit_shortcut">Edit shortcut</string>
+    <string name="directory">Directory</string>
+    <string name="questiondelete_shortcut">Delete shortcut?</string>
+    <string name="copy_low_memory">Running out of memory, please clear some RAM</string>
+    <string name="monofont">Monospace Font</string>
+    <string name="showHeaders">Show Headers</string>
+	
+	<!--FROM HERE ON STRINGS ARE EXCLUSIVELY USED IN plurals.xml-->
+	<string name="noitems">No items</string>
+	<string name="item">item</string>
+	<string name="items">items</string>
+	
+	<string name="byte_singular">byte</string>
+	<string name="bytes">bytes</string>
+    <!-- end of plurals -->
 
-  <!-- An operation requires elevated privileged. Ask the user. -->
-  <string name="advise_insufficient_permissions">The operation requires elevated privileges.\n\n
-    Do you want to change to Root Access mode?</string>
-
-
-  <!-- The parent directory of the current directory in navigation view -->
-  <string name="parent_dir">Parent folder</string>
-  <!-- External storage descripton -->
-  <string name="external_storage">External storage</string>
-  <!-- Usb storage descripton -->
-  <string name="usb_storage">USB storage</string>
-
-  <!-- ActionBar Buttons * FileSystem -->
-  <string name="actionbar_button_filesystem_cd">File system info</string>
-  <!-- ActionBar Buttons * Sort Mode -->
-  <string name="actionbar_button_sort_mode_cd">Sort mode</string>
-  <!-- ActionBar Buttons * Layout Mode -->
-  <string name="actionbar_button_layout_mode_cd">Layout mode</string>
-  <!-- ActionBar Buttons * Other View Options -->
-  <string name="actionbar_button_other_view_options_cd">Other view options</string>
-  <!-- ActionBar Buttons * Done -->
-  <string name="actionbar_button_selection_done_cd">Done</string>
-  <!-- ActionBar Buttons * Actions -->
-  <string name="actionbar_button_actions_cd">Actions</string>
-  <!-- ActionBar Buttons * History -->
-  <string name="actionbar_button_history_cd">History</string>
-  <!-- ActionBar Buttons * Bookmarks -->
-  <string name="actionbar_button_bookmarks_cd">Bookmarks</string>
-  <!-- ActionBar Buttons * Search -->
-  <string name="actionbar_button_search_cd">Search</string>
-  <!-- ActionBar Buttons * Overflow -->
-  <string name="actionbar_button_overflow_cd">More options</string>
-  <!-- ActionBar Buttons * Storage volumes -->
-  <string name="actionbar_button_storage_cd">Storage volumes</string>
-  <!-- ActionBar Buttons * Save -->
-  <string name="actionbar_button_save_cd">Save</string>
-
-  <!-- Navigation View * Sort * Sort by name (ascending) -->
-  <string name="sort_by_name_asc">By name &#x25B2;</string>
-  <!-- Navigation View * Sort * Sort by name (descending) -->
-  <string name="sort_by_name_desc">By name &#x25BC;</string>
-  <!-- Navigation View * Sort * Sort by date (ascending) -->
-  <string name="sort_by_date_asc">By date &#x25B2;</string>
-  <!-- Navigation View * Sort * Sort by date (descending) -->
-  <string name="sort_by_date_desc">By date &#x25BC;</string>
-
-  <!-- Navigation View * Layout * Icons -->
-  <string name="layout_icons">Icons</string>
-  <!-- Navigation View * Layout * Simple -->
-  <string name="layout_simple">Simple</string>
-  <!-- Navigation View * Layout * Details -->
-  <string name="layout_details">Details</string>
-
-  <!-- Navigation View * View * Show folders first -->
-  <string name="cm_filemanager_show_dirs_first">Show folders first</string>
-  <!-- Navigation View * View * Show hidden files option -->
-  <string name="cm_filemanager_show_hidden">Show hidden files</string>
-  <!-- Navigation View * View * Show system files option -->
-  <string name="cm_filemanager_show_system">Show system files</string>
-  <!-- Navigation View * View * Show symlinks option -->
-  <string name="cm_filemanager_show_symlinks">Show symlinks</string>
-
-  <!-- Filesystem Info (no data). Dialog title -->
-  <string name="filesystem_info_warning_title">No information</string>
-  <!-- Filesystem Info (no data). Dialog message -->
-  <string name="filesystem_info_warning_msg">There is no information available for the file system.</string>
-  <!-- Filesystem Info * Filesystem couldn't be mounted -->
-  <string name="filesystem_info_cant_be_mounted_msg">
-    The file system cannot be mounted/unmounted.</string>
-  <!-- Filesystem Info * Not allowed message -->
-  <string name="filesystem_info_mount_not_allowed_msg">File system mounting operations are not allowed
-    in Safe mode. Tap to change to Root Access mode.</string>
-  <!-- Filesystem Info * Mount failed -->
-  <string name="filesystem_info_mount_failed_msg">File system mounting operation failed.
-    Some file systems, like SD cards, cannot be mounted/unmounted because
-    they are built-in as read-only file systems.</string>
-  <!-- Filesystem Info Dialog * Title -->
-  <string name="filesystem_info_dialog_title">File system information</string>
-  <!-- Filesystem Info Dialog * Tab * Info -->
-  <string name="filesystem_info_dialog_tab_info">Info</string>
-  <!-- Filesystem Info Dialog * Tab * Disk Usage -->
-  <string name="filesystem_info_dialog_tab_disk_usage">Disk usage</string>
-  <!-- Filesystem Info Dialog * Status Label -->
-  <string name="filesystem_info_dialog_status">Status:</string>
-  <!-- Filesystem Info Dialog * Mount Point Label -->
-  <string name="filesystem_info_dialog_mount_point">Mount point:</string>
-  <!-- Filesystem Info Dialog * Device Label -->
-  <string name="filesystem_info_dialog_device">Device:</string>
-  <!-- Filesystem Info Dialog * Type Label -->
-  <string name="filesystem_info_dialog_type">Type:</string>
-  <!-- Filesystem Info Dialog * Options Label -->
-  <string name="filesystem_info_dialog_options">Options:</string>
-  <!-- Filesystem Info Dialog * Dump/Pass Label -->
-  <string name="filesystem_info_dialog_dump_pass">Dump / Pass:</string>
-  <!-- Filesystem Info Dialog * Total Disk Usage -->
-  <string name="filesystem_info_dialog_total_disk_usage">Total:</string>
-  <!-- Filesystem Info Dialog * Used Disk Usage -->
-  <string name="filesystem_info_dialog_used_disk_usage">Used:</string>
-  <!-- Filesystem Info Dialog * Free Disk Usage -->
-  <string name="filesystem_info_dialog_free_disk_usage">Free:</string>
-
-
-  <!-- Fso Properties * Not allowed message -->
-  <string name="fso_properties_permissions_not_allowed_msg">Permissions operations are not allowed
-    in Safe mode. Tap to change to Root Access mode.</string>
-  <!-- Fso Properties * Failed to change owner to fso -->
-  <string name="fso_properties_failed_to_change_owner_msg">The change of owner operation failed.\n\n
-    For security reasons, some file systems, like SD cards, do not allow the changing of ownership.</string>
-  <!-- Fso Properties * Failed to change group to fso -->
-  <string name="fso_properties_failed_to_change_group_msg">The change of group operation failed.\n\n
-    For security reasons, some file systems, like SD cards, do not allow the changing of groups.</string>
-  <!-- Fso Properties * Failed to change group to fso -->
-  <string name="fso_properties_failed_to_change_permission_msg">The change of permissions
-    operation failed.\n\nFor security reasons, some file systems, like SD cards, do not allow the changing of permissions.</string>
-  <!-- Fso Properties Dialog * Title -->
-  <string name="fso_properties_dialog_title">Properties</string>
-  <!-- Fso Properties Dialog * Tab * Info -->
-  <string name="fso_properties_dialog_tab_info">Info</string>
-  <!-- Fso Properties Dialog * Tab * Permissions -->
-  <string name="fso_properties_dialog_tab_permissions">Permissions</string>
-  <!-- Fso Properties Dialog * Name Label -->
-  <string name="fso_properties_dialog_name">Name:</string>
-  <!-- Fso Properties Dialog * Parent Folder Label -->
-  <string name="fso_properties_dialog_parent">Parent:</string>
-  <!-- Fso Properties Dialog * Type Label -->
-  <string name="fso_properties_dialog_type">Type:</string>
-  <!-- Fso Properties Dialog * Category Label -->
-  <string name="fso_properties_dialog_category">Category:</string>
-  <!-- Fso Properties Dialog * Link Label -->
-  <string name="fso_properties_dialog_link">Link:</string>
-  <!-- Fso Properties Dialog * Size Label -->
-  <string name="fso_properties_dialog_size">Size:</string>
-  <!-- Fso Properties Dialog * Contains Label -->
-  <string name="fso_properties_dialog_contains">Contains:</string>
-  <!-- Fso Properties Dialog * Last Accessed Time Label -->
-  <string name="fso_properties_dialog_last_accessed_date">Accessed:</string>
-  <!-- Fso Properties Dialog * Last Modified Time Label -->
-  <string name="fso_properties_dialog_last_modified_date">Modified:</string>
-  <!-- Fso Properties Dialog * Last Changed Time -->
-  <string name="fso_properties_dialog_last_changed_date">Changed:</string>
-  <!-- Fso Properties Dialog * Owner Label -->
-  <string name="fso_properties_dialog_owner">Owner:</string>
-  <!-- Fso Properties Dialog * Group Label -->
-  <string name="fso_properties_dialog_group">Group:</string>
-  <!-- Fso Properties Dialog * Others Label -->
-  <string name="fso_properties_dialog_others">Others:</string>
-  <!-- Fso Properties Dialog * Special Label -->
-  <string name="fso_properties_dialog_special" translatable="false">S</string>
-  <!-- Fso Properties Dialog * Read Label -->
-  <string name="fso_properties_dialog_read" translatable="false">R</string>
-  <!-- Fso Properties Dialog * Write Label -->
-  <string name="fso_properties_dialog_write" translatable="false">W</string>
-  <!-- Fso Properties Dialog * Execute Label -->
-  <string name="fso_properties_dialog_execute" translatable="false">X</string>
-  <!-- Fso Properties Dialog * Execute Label -->
-  <string name="fso_properties_dialog_folder_items" translatable="false">
-    <xliff:g id="folders">%1$s</xliff:g> / <xliff:g id="files">%2$s</xliff:g></string>
-  <!-- Fso Properties Dialog * Skip media scan -->
-  <string name="fso_properties_dialog_include_in_media_scan">Skip media scan:</string>
-  <string name="fso_failed_to_allow_media_scan">Failed to allow media scanning</string>
-  <string name="fso_failed_to_prevent_media_scan">Failed to prevent media scanning</string>
-  <string name="fso_delete_nomedia_dir_title">Delete .nomedia directory</string>
-  <string name="fso_delete_nomedia_dir_body">This directory contains a .nomedia directory.\n\nDo you want to delete it and all of its contents?</string>
-  <string name="fso_delete_nomedia_non_empty_title">Delete .nomedia file</string>
-  <string name="fso_delete_nomedia_non_empty_body">This directory contains a non-empty .nomedia file.\n\nDo you want to delete it?</string>
-
-  <!-- History * History activity title -->
-  <string name="history">History</string>
-  <!-- History * The history is empty -->
-  <string name="msgs_history_empty">History is empty.</string>
-  <!-- History * The history reference is not in the actual history list -->
-  <string name="msgs_history_unknown">Unknown history item.</string>
-
-  <!-- Search * Search activity title -->
-  <string name="search">Search results</string>
-  <!-- Search * Search hint message -->
-  <string name="search_hint">Type your search</string>
-  <!-- Search * Voice search hint message -->
-  <string name="search_voice_hint">Speak your search</string>
-  <!-- Search * Search error message -->
-  <string name="search_error_msg">An error occurred while searching. No results found.</string>
-  <!-- Search * Search no results message -->
-  <string name="search_no_results_msg">No results found.</string>
-  <!-- Search * Number of items found in directory -->
-  <string name="search_found_items_in_directory"><xliff:g id="items">%1$s</xliff:g> in
-    <xliff:g id="path">%2$s</xliff:g></string>
-  <!-- Search * Search query terms -->
-  <string name="search_terms"><![CDATA[<b>Terms:</b>]]> <xliff:g id="terms">%1$s</xliff:g></string>
-  <!-- Search * Confirm search -->
-  <string name="search_few_characters_title">Confirm search</string>
-  <!-- Search * Some terms of the search are too small. The operation could be very costly -->
-  <string name="search_few_characters_msg">Some of the search terms has a small number of characters. The
-      operation could be very costly in time and system resources.\n\nDo you want to continue?</string>
-  <!-- Search * Searching dialog title -->
-  <string name="searching">Please wait\u2026</string>
-  <!-- Search * Searching label -->
-  <string name="searching_action_label">Searching in progress</string>
-
-  <!-- Picker Activity -->
-  <string name="picker" translatable="false">@string/app_name</string>
-  <!-- Picker Activity * Dialog title -->
-  <string name="picker_title">Pick a file</string>
-  <string name="directory_picker_title">Pick a directory</string>
-
-  <!-- Editor * Editor activity title -->
-  <string name="editor">Editor</string>
-  <!-- Editor * Invalid file message -->
-  <string name="editor_invalid_file_msg">Invalid file.</string>
-  <!-- Editor * File not found message -->
-  <string name="editor_file_not_found_msg">File not found.</string>
-  <!-- Editor * File size exceed the limit -->
-  <string name="editor_file_exceed_size_msg">The file is too big to be open inside this device.</string>
-  <!-- Editor * Editor is dirty, ask the user * Dialog title -->
-  <string name="editor_dirty_ask_title">Confirm exit</string>
-  <!-- Editor * Editor is dirty, ask the user * Dialog message -->
-  <string name="editor_dirty_ask_msg">There are unsaved changes.\n\nExit without saving?</string>
-  <!-- Editor * Save operation success -->
-  <string name="editor_successfully_saved">The file was successfully saved.</string>
-  <!-- Editor * Read-only file mode -->
-  <string name="editor_read_only_mode">The file is opened in read-only mode.</string>
-  <!-- Editor * Dumping message -->
-  <string name="dumping_message">Generating hex dump\u2026</string>
-  <!-- Editor * Displaying -->
-  <string name="displaying_message">Displaying\u2026</string>
-
-  <!-- Bookmarks * Bookmarks activity title -->
-  <string name="bookmarks">Bookmarks</string>
-  <!-- Bookmarks * Bookmark name * Home -->
-  <string name="bookmarks_home">Home</string>
-  <!-- Bookmarks * Bookmark name * Root folder -->
-  <string name="bookmarks_root_folder">Root folder</string>
-  <!-- Bookmarks * Bookmark name * System folder -->
-  <string name="bookmarks_system_folder">System folder</string>
-  <!-- Bookmarks * Bookmark name * Button * Initial directory content description -->
-  <string name="bookmarks_button_config_cd">Set the initial folder.</string>
-  <!-- Bookmarks * Bookmark name * Button * Remove bookmark content description -->
-  <string name="bookmarks_button_remove_bookmark_cd">Remove the bookmark.</string>
-  <!-- Bookmarks * Bookmarks * Actions * Bookmark successfully added -->
-  <string name="bookmarks_msgs_add_success">The bookmark was added successfully.</string>
-
-  <!-- Initial directory dialog title -->
-  <string name="initial_directory_dialog_title">Initial folder</string>
-  <!-- Initial directory label -->
-  <string name="initial_directory_label">Choose the initial folder:</string>
-  <!-- Initial directory is relative -->
-  <string name="initial_directory_relative_msg">Relative paths are not allowed.</string>
-  <!-- Initial directory error message -->
-  <string name="initial_directory_error_msg">An error occurred while saving the initial folder.</string>
-
-  <!-- Menu * Navigation * History -->
-  <string name="menu_history">History</string>
-  <!-- Menu * Navigation * Bookmarks -->
-  <string name="menu_bookmarks">Bookmarks</string>
-  <!-- Menu * Navigation * Search -->
-  <string name="menu_search">Search</string>
-  <!-- Menu * Navigation * Settings -->
-  <string name="menu_settings">Settings</string>
-  <!-- Menu * History * Clear history -->
-  <string name="menu_clear_history">Clear history</string>
-  <!-- Menu * Editor * No suggestions -->
-  <string name="menu_no_suggestions">No suggestions</string>
-  <!-- Menu * Editor * Word wrap -->
-  <string name="menu_word_wrap">Word wrap</string>
-  <!-- Menu * Editor * Sintax highlight -->
-  <string name="menu_syntax_highlight">Syntax highlight</string>
-
-  <!-- Regular expression for create copy action -->
-  <string name="create_copy_regexp">
-    <xliff:g id="name">%1$s</xliff:g> - copy<xliff:g id="extension">%2$s</xliff:g></string>
-  <!-- Regular expression for new compressed file -->
-  <string name="create_new_compress_file_regexp">
-    <xliff:g id="name">%1$s</xliff:g> - new<xliff:g id="extension">%2$s</xliff:g></string>
-
-  <!-- Waiting dialog * Performing operation message -->
-  <string name="waiting_dialog_msg">Performing operation\u2026</string>
-  <!-- Waiting dialog * Copying title -->
-  <string name="waiting_dialog_copying_title">Copying\u2026</string>
-  <!-- Waiting dialog * Copying message -->
-  <string name="waiting_dialog_copying_msg">
-    <![CDATA[<b>From</b>]]> <xliff:g id="from">%1$s</xliff:g><![CDATA[<br/>]]>
-    <![CDATA[<b>To</b>]]> <xliff:g id="to">%2$s</xliff:g></string>
-  <!-- Waiting dialog * Moving title -->
-  <string name="waiting_dialog_moving_title">Moving\u2026</string>
-  <!-- Waiting dialog * Moving message -->
-  <string name="waiting_dialog_moving_msg">
-    <![CDATA[<b>From</b>]]> <xliff:g id="from">%1$s</xliff:g><![CDATA[<br/>]]>
-    <![CDATA[<b>To</b>]]> <xliff:g id="to">%2$s</xliff:g></string>
-  <!-- Waiting dialog * Deleting title -->
-  <string name="waiting_dialog_deleting_title">Deleting\u2026</string>
-  <!-- Waiting dialog * Deleting message -->
-  <string name="waiting_dialog_deleting_msg">
-    <![CDATA[<b>File</b>]]> <xliff:g id="file">%1$s</xliff:g></string>
-  <!-- Waiting dialog * Extracting title -->
-  <string name="waiting_dialog_extracting_title">Extracting\u2026</string>
-  <!-- Waiting dialog * Extracting message -->
-  <string name="waiting_dialog_extracting_msg">
-    <![CDATA[<b>File</b>]]> <xliff:g id="file">%1$s</xliff:g></string>
-  <!-- Waiting dialog * Extracting title -->
-  <string name="waiting_dialog_compressing_title">Compressing\u2026</string>
-  <!-- Waiting dialog * Extracting message -->
-  <string name="waiting_dialog_compressing_msg">
-    <![CDATA[<b>File</b>]]> <xliff:g id="file">%1$s</xliff:g></string>
-  <!-- Waiting dialog * Initializing the dialog -->
-  <string name="waiting_dialog_analizing_msg">
-    <![CDATA[<b>Analyzing\u2026</b>]]></string>
-  <!-- Extracting * Success message -->
-  <string name="msgs_extracting_success">
-    The extracting operation was completed successfully. The data was extracted to
-    <xliff:g id="destination">%1$s</xliff:g>.</string>
-  <!-- Compressing * Success message -->
-  <string name="msgs_compressing_success">
-    The compressing operation was completed successfully. The data was compressed to
-    <xliff:g id="destination">%1$s</xliff:g>.</string>
-
-  <!-- Actions Dialog * Title -->
-  <string name="actions_dialog_title">Actions</string>
-  <!-- Actions Dialog * Menu * Properties of current folder -->
-  <string name="actions_menu_properties_current_folder">Properties</string>
-  <!-- Actions Dialog * Menu * Refresh -->
-  <string name="actions_menu_refresh">Refresh</string>
-  <!-- Actions Dialog * Menu * New directory -->
-  <string name="actions_menu_new_directory">New folder</string>
-  <!-- Actions Dialog * Menu * New file -->
-  <string name="actions_menu_new_file">New file</string>
-  <!-- Actions Dialog * Menu * Select all -->
-  <string name="actions_menu_select_all">Select all</string>
-  <!-- Actions Dialog * Menu * Deselect all -->
-  <string name="actions_menu_deselect_all">Deselect all</string>
-  <!-- Actions Dialog * Menu * Select -->
-  <string name="actions_menu_select">Select</string>
-  <!-- Actions Dialog * Menu * Deselect -->
-  <string name="actions_menu_deselect">Deselect</string>
-  <!-- Actions Dialog * Menu * Copy/Paste selection -->
-  <string name="actions_menu_paste_selection">Copy selection here</string>
-  <!-- Actions Dialog * Menu * Move selection -->
-  <string name="actions_menu_move_selection">Move selection here</string>
-  <!-- Actions Dialog * Menu * Delete selection -->
-  <string name="actions_menu_delete_selection">Delete selection</string>
-  <!-- Actions Dialog * Menu * Compress selection -->
-  <string name="actions_menu_compress_selection">Compress selection</string>
-  <!-- Actions Dialog * Menu * Create link -->
-  <string name="actions_menu_create_link">Create link</string>
-  <!-- Actions Dialog * Menu * Open -->
-  <string name="actions_menu_open">Open</string>
-  <!-- Actions Dialog * Menu * Open with -->
-  <string name="actions_menu_open_with">Open with</string>
-  <!-- Actions Dialog * Menu * Execute -->
-  <string name="actions_menu_execute">Execute</string>
-  <!-- Actions Dialog * Menu * Send -->
-  <string name="actions_menu_send">Send</string>
-  <!-- Actions Dialog * Menu * Send selection -->
-  <string name="actions_menu_send_selection">Send selection</string>
-  <!-- Actions Dialog * Menu * Compress -->
-  <string name="actions_menu_compress">Compress</string>
-  <!-- Actions Dialog * Menu * Extract -->
-  <string name="actions_menu_extract">Extract</string>
-  <!-- Actions Dialog * Menu * Delete -->
-  <string name="actions_menu_delete">Delete</string>
-  <!-- Actions Dialog * Menu * Rename -->
-  <string name="actions_menu_rename">Rename</string>
-  <!-- Actions Dialog * Menu * Create copy -->
-  <string name="actions_menu_create_copy">Create copy</string>
-  <!-- Actions Dialog * Menu * Properties -->
-  <string name="actions_menu_properties">Properties</string>
-  <!-- Actions Dialog * Menu * Add to bookmarks -->
-  <string name="actions_menu_add_to_bookmarks">Add to bookmarks</string>
-  <!-- Actions Dialog * Menu * Add shortcut -->
-  <string name="actions_menu_add_shortcut">Add shortcut</string>
-  <!-- Actions Dialog * Menu * Open parent folder -->
-  <string name="actions_menu_open_parent_folder">Open parent</string>
-  <!-- Actions Dialog * Menu * Compute checksum -->
-  <string name="actions_menu_compute_checksum">Compute checksum</string>
-
-  <!-- Actions * Ask user prior to do an undone operation. Dialog message -->
-  <string name="actions_ask_undone_operation_msg">
-    This action cannot be undone. Do you want to continue?</string>
-
-  <!-- Enter Name Dialog * Label -->
-  <string name="input_name_dialog_label">Name:</string>
-  <!-- Enter Name Dialog * Message * Empty name -->
-  <string name="input_name_dialog_message_empty_name">The name cannot be empty.</string>
-  <!-- Enter Name Dialog * Message * Invalid name -->
-  <string name="input_name_dialog_message_invalid_path_name">Invalid name. The characters
-    \'<xliff:g id="invalid_characters">%1$s</xliff:g>\' are not allowed.</string>
-  <!-- Enter Name Dialog * Message * Invalid name -->
-  <string name="input_name_dialog_message_invalid_name">Invalid name. The names \'.\' and
-    \'..\' are not allowed.</string>
-  <!-- Enter Name Dialog * Message * Name exists -->
-  <string name="input_name_dialog_message_name_exists">The name already exists.</string>
-
-  <!-- Associations Dialog * Title -->
-  <string name="associations_dialog_title">Associations</string>
-  <!-- Associations Dialog * Remember the user action -->
-  <string name="associations_dialog_remember">Remember selection</string>
-  <!-- Associations Dialog * Open with Title -->
-  <string name="associations_dialog_openwith_title">Open with</string>
-    <!-- Associations Dialog * Open action (button title) -->
-  <string name="associations_dialog_openwith_action">Open</string>
-  <!-- Associations Dialog * Send with Title -->
-  <string name="associations_dialog_sendwith_title">Send with</string>
-    <!-- Associations Dialog * Send action (button title) -->
-  <string name="associations_dialog_sendwith_action">Send</string>
-
-  <!-- Inline Autocomplete Widget * Tab message nothing to complete -->
-  <string name="inline_autocomplete_tab_nothing_to_complete_msg">Nothing to complete.</string>
-
-  <!-- Execution console * Title -->
-  <string name="execution_console_title">Console</string>
-  <!-- Execution console * The script name label -->
-  <string name="execution_console_script_name_label">Script:</string>
-  <!-- Execution console * The script execution time label -->
-  <string name="execution_console_script_execution_time_label">Time:</string>
-  <!-- Execution console * The script exit code label -->
-  <string name="execution_console_script_exitcode_label">Exit code:</string>
-  <!-- Execution console * The script execution time seconds string -->
-  <string name="execution_console_script_execution_time_text">
-    <xliff:g id="seconds">%1$s</xliff:g> sec.</string>
-
-  <!-- Compute checksum * Title -->
-  <string name="compute_checksum_title">Compute checksum</string>
-  <!-- Compute checksum * The file name label -->
-  <string name="compute_checksum_filename_label">File:</string>
-  <!-- Compute checksum * The MD5 label -->
-  <string name="compute_checksum_md5_label" translatable="false">MD5:</string>
-  <!-- Compute checksum * The SHA1 label -->
-  <string name="compute_checksum_sha1_label" translatable="false">SHA-1:</string>
-  <!-- Compute checksum * The computing checksum message-->
-  <string name="compute_checksum_computing_checksum_msg">Computing checksum\u2026</string>
-
-  <!-- Mime/Types * Folder -->
-  <string name="mime_folder">Folder</string>
-  <!-- Mime/Types * Symlink -->
-  <string name="mime_symlink">Symlink</string>
-  <!-- Mime/Types * Unknown -->
-  <string name="mime_unknown">Unknown</string>
-
-  <!--  Filetime formats -->
-  <string name="filetime_format_mode_system">System-defined</string>
-  <string name="filetime_format_mode_locale">Locale-defined</string>
-  <string name="filetime_format_mode_ddMMyyyy_HHmmss">dd/mm/yyyy hh:mm:ss</string>
-  <string name="filetime_format_mode_MMddyyyy_HHmmss">mm/dd/yyyy hh:mm:ss</string>
-  <string name="filetime_format_mode_yyyyMMdd_HHmmss">yyyy-mm-dd hh:mm:ss</string>
-
-  <!-- Selection. -->
-  <!-- For example "2 folders and 1 file selected." -->
-  <string name="selection_folders_and_files"><xliff:g id="folders">%1$s</xliff:g> and <xliff:g id="files">%2$s</xliff:g> selected.</string>
-
-  <!-- Category descriptions -->
-  <string name="category_system">SYSTEM</string>
-  <string name="category_app">APP</string>
-  <string name="category_binary">BINARY</string>
-  <string name="category_text">TEXT</string>
-  <string name="category_document">DOCUMENT</string>
-  <string name="category_ebook">EBOOK</string>
-  <string name="category_mail">MAIL</string>
-  <string name="category_compress">COMPRESS</string>
-  <string name="category_exec">EXECUTABLE</string>
-  <string name="category_database">DATABASE</string>
-  <string name="category_font">FONT</string>
-  <string name="category_image">IMAGE</string>
-  <string name="category_audio">AUDIO</string>
-  <string name="category_video">VIDEO</string>
-  <string name="category_security">SECURITY</string>
-
-  <!-- Compression * Compression modes dialog title -->
-  <string name="compression_mode_title">Compression mode</string>
-  <!-- Compression * Supported archive and compression modes -->
-  <string name="compression_mode_tar" translatable="false">Tar (tar)</string>
-  <string name="compression_mode_tar_gzip" translatable="false">Tar/gzip (tar.gz)</string>
-  <string name="compression_mode_tar_gzip2" translatable="false">Tar/gzip (tgz)</string>
-  <string name="compression_mode_tar_bzip" translatable="false">Tar/bzip (tar.bz2)</string>
-  <string name="compression_mode_gzip" translatable="false">Gzip (gz)</string>
-  <string name="compression_mode_bzip" translatable="false">Bzip (bz2)</string>
-  <string name="compression_mode_zip" translatable="false">Zip (zip)</string>
-
-  <!-- Shortcut. Failed to handle the shortcut -->
-  <string name="shortcut_failed_msg">Failed to handle the shortcut.</string>
-  <!-- Shortcut. The shortcut was created -->
-  <string name="shortcut_creation_success_msg">Shortcut created successfully.</string>
-  <!-- Shortcut. The shortcut wasn't created -->
-  <string name="shortcut_creation_failed_msg">Shortcut creation failed.</string>
-
-  <!-- Preferences title -->
-  <string name="pref">Settings</string>
-  <!-- Preferences * General title -->
-  <string name="pref_general">General settings</string>
-  <!-- Preferences * Search title -->
-  <string name="pref_search">Search options</string>
-  <!-- Preferences * Editor title -->
-  <string name="pref_editor">Editor options</string>
-  <!-- Preferences * Themes title -->
-  <string name="pref_themes">Themes</string>
-  <!-- Preferences * About title -->
-  <string name="pref_about">About</string>
-  <!-- Preferences * About summary -->
-  <string name="pref_about_summary">File Manager v<xliff:g id="version">%1$s</xliff:g>
-    \nCopyright \u00A9 2013 The CyanogenMod Project</string>
-
-  <!-- Preferences * General * Behaviour category -->
-  <string name="pref_general_behaviour_category">General</string>
-  <!-- Preferences * General * Case sensitive sort and navigating title -->
-  <string name="pref_case_sensitive_sort">Case-sensitive</string>
-  <!-- Preferences * General * Case sensitive sort and navigating summary -->
-  <string name="pref_case_sensitive_sort_summary">Consider case when navigating or sorting search results</string>
-  <!-- Preferences * General * Filetime format mode title -->
-  <string name="pref_filetime_format_mode">Date/time format</string>
-  <!-- Preferences * General *Disk usage warning level title -->
-  <string name="pref_disk_usage_warning_level">Disk usage warning</string>
-  <!-- Preferences * General * Disk usage warning level summary -->
-  <!-- FIXME Use "percent" instead of "%" symbol, because it make crash the app on getSummary
-       of ListPreference. This should be fixed in frameworks base prior to be added here. -->
-  <string name="pref_disk_usage_warning_level_summary" formatted="false">Display a different
-    color in disk usage widgets when they reach <xliff:g id="level">%1$s</xliff:g> percent
-    of free disk space</string>
-  <!-- Preferences * General * Compute folder statistics title -->
-  <string name="pref_compute_folder_statistics">Compute folder statistics</string>
-  <!-- Preferences * General * Compute folder statistics summary on -->
-  <string name="pref_compute_folder_statistics_on">Warning! The computation of folder statistics is costly in time and
-    system resources</string>
-  <!-- Preferences * General * Display thumbs -->
-  <string name="pref_display_thumbs">Preview</string>
-  <!-- Preferences * General * Display thumbs summary -->
-  <string name="pref_display_thumbs_summary">Show a preview image for pictures, videos, music files and apps.</string>
-  <!-- Preferences * General * Use flinger detection -->
-  <string name="pref_use_flinger">Use swipe gestures</string>
-  <!-- Preferences * General * Use flinger detection summary -->
-  <string name="pref_use_flinger_summary">Use swipe left to right gesture detection to delete files or folders.</string>
-  <!-- Preferences * General * Advanced settings category -->
-  <string name="pref_general_advanced_settings_category">Advanced</string>
-  <!-- Preferences * General * Access mode -->
-  <string name="pref_access_mode">Access mode</string>
-  <!-- Preferences * General * Safe mode -->
-  <string name="pref_access_mode_safe">Safe mode</string>
-  <!-- Preferences * General * Safe mode summary -->
-  <string name="pref_access_mode_safe_summary">Safe mode\n\nThe app is running without
-    privileges and the only accessible file systems are the storage volumes (SD cards and USB)</string>
-  <!-- Preferences * General * Prompt user mode -->
-  <string name="pref_access_mode_prompt">Prompt User mode</string>
-  <!-- Preferences * General * Prompt user mode summary -->
-  <string name="pref_access_mode_prompt_summary">Prompt User mode\n\nThe app is running
-    with full access to the file system but will prompt for permission prior to executing
-    any privileged actions</string>
-  <!-- Preferences * General * Root access mode -->
-  <string name="pref_access_mode_root">Root Access mode</string>
-  <!-- Preferences * General * Root access mode summary -->
-  <string name="pref_access_mode_root_summary">Root Access mode\n\nWarning! This mode allows operations that could break
-    your device. It\'s your responsibility to ensure that an operation is safe</string>
-  <!-- Preferences * Search * Results category -->
-  <string name="pref_search_results_category">Results</string>
-  <!-- Preferences * Search * Show relevance widget -->
-  <string name="pref_show_relevance_widget">Show relevance widget</string>
-  <!-- Preferences * Search * Highlight search terms -->
-  <string name="pref_highlight_terms">Highlight search terms</string>
-  <!-- Preferences * Search * Sort results mode -->
-  <string name="pref_sort_search_results_mode">Sort results mode</string>
-  <!-- Preferences * Search * Sort results mode. None -->
-  <string name="pref_sort_search_results_mode_none">No sort</string>
-  <!-- Preferences * Search * Sort results mode. None -->
-  <string name="pref_sort_search_results_mode_name">By name</string>
-  <!-- Preferences * Search * Sort results mode. Relevance -->
-  <string name="pref_sort_search_results_mode_relevance">By relevance</string>
-  <!-- Preferences * Search * Privacity category -->
-  <string name="pref_search_privacity_category">Privacy</string>
-  <!-- Preferences * Search * Save search terms -->
-  <string name="pref_save_search_terms">Save search terms</string>
-  <!-- Preferences * Search * Save search terms summary on -->
-  <string name="pref_save_search_terms_on">Search terms will be saved and used as suggestions
-      in future searches</string>
-  <!-- Preferences * Search * Save search terms summary off -->
-  <string name="pref_save_search_terms_off">Search terms will not be saved</string>
-  <!-- Preferences * Search * Remove saved search terms -->
-  <string name="pref_remove_saved_search_terms">Remove saved search terms</string>
-  <!-- Preferences * Search * Remove saved search terms summary -->
-  <string name="pref_remove_saved_search_terms_summary">Tap to remove all the saved search terms</string>
-  <!-- Preferences * Search * Suggestions were truncated -->
-  <string name="pref_remove_saved_search_terms_msg">All saved search terms were removed.</string>
-  <!-- Preferences * Editor * Behaviour category -->
-  <string name="pref_editor_behaviour_category">Behaviour</string>
-  <!-- Preferences * Editor * No suggestions -->
-  <string name="pref_no_suggestions">No suggestions</string>
-  <!-- Preferences * Editor * No suggestions summary -->
-  <string name="pref_no_suggestions_desc">Do not display dictionary suggestions while editing the file</string>
-  <!-- Preferences * Editor * Word wrap -->
-  <string name="pref_word_wrap">Word wrap</string>
-  <!-- Preferences * Editor * Hexdump -->
-  <string name="pref_hexdump">Hexdump binary files</string>
-  <!-- Preferences * Editor * Hexdump desc -->
-  <string name="pref_hexdump_desc">When opening a binary file, generate an hexdump of the file
-    and open it in the hex viewer.</string>
-    <!-- Preferences * Editor * Syntax highlight category -->
-  <string name="pref_editor_syntax_highlight_category">Syntax highlight</string>
-  <!-- Preferences * Editor * Syntax highlight -->
-  <string name="pref_syntax_highlight">Syntax highlight</string>
-  <!-- Preferences * Editor * Syntax highlight summary -->
-  <string name="pref_syntax_highlight_desc">Highlight the syntax of the file displayed in
-    the editor (only when a syntax highlight processor is available for the type of file)</string>
-  <!-- Preferences * Editor * Syntax highlight color scheme -->
-  <string name="pref_syntax_highlight_color_scheme">Color scheme</string>
-  <!-- Preferences * Editor * Syntax highlight color scheme summary -->
-  <string name="pref_syntax_highlight_color_scheme_desc">Tap to select the syntax highlight color scheme</string>
-  <!-- Preferences * Editor * Syntax highlight * Color Scheme -->
-  <string name="pref_syntax_sh_use_theme_default">Use theme default</string>
-  <!-- Preferences * Editor * Syntax highlight *Color Scheme summary -->
-  <string name="pref_syntax_sh_use_theme_default_desc">Use the default syntax highlight of the current theme</string>
-  <!-- Preferences * Editor * Syntax highlight * Color Scheme * Items category -->
-  <string name="pref_editor_sh_item_category">Items</string>
-  <!-- Preferences * Themes * Themes selection category -->
-  <string name="pref_themes_selection_category">Themes</string>
-  <!-- Preferences * Themes * Set theme button -->
-  <string name="pref_themes_set_theme">Set theme</string>
-  <!-- Preferences * Themes * No preview -->
-  <string name="pref_themes_no_preview">No preview\navailable</string>
-  <!-- Preferences * Themes * Confirmation message -->
-  <string name="pref_themes_confirmation">Theme was applied successfully.</string>
-  <!-- Preferences * Themes * Theme not found message -->
-  <string name="pref_themes_not_found">Theme not found.</string>
-
-  <!-- Preferences * Debug * Capture debug traces -->
-  <string name="pref_debug_traces">Log debugging information</string>
-
-  <!-- Themes * Default theme name -->
-  <string name="theme_default_name">Dark Theme</string>
-  <!-- Themes * Default theme description -->
-  <string name="theme_default_description">A dark theme for CyanogenMod File Manager.</string>
-  <!-- Themes * Default theme author -->
-  <string name="themes_author">CyanogenMod</string>
-
-  <!-- ColorPickerDialog -->
-  <!-- The text of the alpha slider control -->
-  <string name="color_picker_alpha_slider_text">Alpha</string>
-  <!-- The label of the current color panel -->
-  <string name="color_picker_current_text">Current:</string>
-  <!-- The label of the new color panel -->
-  <string name="color_picker_new_text">New:</string>
-  <!-- The label of the color input -->
-  <string name="color_picker_color">Color:</string>
-
-  <!-- Android Syntax Highlight -->
-  <string name="ash_reset_color_scheme">Tap to restore the default theme color scheme</string>
-  <string name="ash_text">Text</string>
-  <string name="ash_assignment">Assignment</string>
-  <string name="ash_singleline_comment">Single-Line comment</string>
-  <string name="ash_multiline_comment">Multi-Line comment</string>
-  <string name="ash_keyword">Keyword</string>
-  <string name="ash_quoted_string">Quoted string</string>
-  <string name="ash_variable">Variable</string>
-
-  <!-- Security * Extract relative or absolute files -->
-  <string name="security_warning_extract">Warning!\n\n
-      Extracting an archive file with relative or absolute paths may cause damage to your device
-      by overwriting system files.\n\n
-      Do you want to continue?</string>
-
-  <!-- Welcome Dialog * Title -->
-  <string name="welcome_title">Welcome</string>
-
+    <string name="no_name">File should have a name</string>
+    <string name="add_item">Add Item</string>
 </resources>

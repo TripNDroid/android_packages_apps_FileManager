@@ -1,0 +1,61 @@
+<!--
+    Copyright (C) 2014 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>
+
+    This file is part of Amaze File Manager.
+
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="SideBar">
+        <Preference
+            android:key="sidebar_folders"
+            android:title="@string/showfolders_pref"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/general">
+        <com.tripndroid.filemanager.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="showHidden"
+            android:title="@string/hidden"/>
+        <com.tripndroid.filemanager.ui.views.preference.CheckBox
+            android:defaultValue="true"
+            android:key="showLastModified"
+            android:summary="@string/lastModifiedSummary"
+            android:title="@string/lastModifiedPref"/>
+        <com.tripndroid.filemanager.ui.views.preference.CheckBox
+            android:defaultValue="false"
+            android:key="showFileSize"
+            android:summary="@string/sizePrefSummary"
+            android:title="@string/sizePref"/>
+        <Preference
+            android:key="columns"
+            android:title="@string/gridcolumnno"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/archive_preferences">
+        <EditTextPreference
+            android:key="extractpath"
+            android:summary="@string/archive_summary"
+            android:title="@string/archive_extract_folder">
+        </EditTextPreference>
+        <EditTextPreference
+            android:key="zippath"
+            android:summary="@string/zip_summary"
+            android:title="@string/zip_create_folder">
+        </EditTextPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

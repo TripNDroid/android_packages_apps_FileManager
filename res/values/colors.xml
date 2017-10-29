@@ -1,60 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!--
+    Copyright (C) 2014 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+    This file is part of Amaze File Manager.
 
-          http://www.apache.org/licenses/LICENSE-2.0
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
- -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-  <!-- The default background color -->
-  <color name="default_background">@android:color/white</color>
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
 
-  <!-- A black color with some transparency -->
-  <color name="black_transparent">#99000000</color>
-  <!-- A derivated blue from @android:color/holo_blue_light with some transparency -->
-  <color name="blue_transparent">#9933b5e5</color>
+<resources>
+    <color name="theme_primary">#673ab7</color>
+    <color name="holo">#8833B5E5</color>
+    <color name="safr">#5f777777</color>
+    <color name="safrs">#5f777777</color>
+    <color name="bar">#3f333333</color>
+    <color name="safr_ripple">#ffc3c3c3</color>
+    <color name="safr_pressed">#ffd7d7d7</color>
+    <color name="safr_pressed_dark">#ff282828</color>
+    <color name="holo_dark_background_new">#ff263238</color>
+    <color name="holo_dark_background">#303030</color>
+    <color name="holo_dark_text">#ff777777</color>
+    <color name="holo_dark_action_mode">#212121</color>
+    <color name="holo_dark_selection">#424242</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="divider_dark_card">#575757</color>
+    <color name="divider_dark">#484848</color>
+    <color name="search_text_highlight">#FF9632</color>
+    <!-- TODO: replace this hardcoded color with default list item selection color -->
+    <color name="check_background">#EEEEEE</color>
+    <color name="grid_background_light">#f2f2f2</color>
+    <color name="black_trans">#14000000</color>
+    <color name="theme_dark_card">#0E141A</color>
+	<!--GRAY 700 used for icons instead of black-->
+    <color name="item_light_theme">#FF616161</color>
 
-  <!-- Disk usage total color -->
-  <color name="disk_usage_total">#7ecccccc</color>
-  <!-- Disk usage used color -->
-  <color name="disk_usage_used">#7e0099cc</color>
-  <!-- Disk usage used color warning -->
-  <color name="disk_usage_used_warning">#7eff4444</color>
-  <!-- Disk usage used color filter normal -->
-  <color name="disk_usage_color_filter_normal">#ffffffff</color>
-  <!-- Disk usage used color filter warning -->
-  <color name="disk_usage_color_filter_warning">#99ff0000</color>
+    <color name="roundedimagepaint">#BAB399</color>
 
-  <!-- Relevance * Border color -->
-  <color name="relevance_border">#becccccc</color>
-  <!-- Relevance *  0% ~ 50% -->
-  <color name="relevance_percentil_25">#bee89338</color>
-  <!-- Relevance * 25% ~ 50% -->
-  <color name="relevance_percentil_50">#bee8e238</color>
-  <!-- Relevance * 50% ~ 75% -->
-  <color name="relevance_percentil_75">#be45bc6c</color>
-  <!-- Relevance * 75% ~ 100% -->
-  <color name="relevance_percentil_100">#be207da4</color>
+    <!--Colors for preference dialog pie chart-->
+    <color name="piechart_red">#FFEF5350</color>
+    <color name="piechart_green">#FF4CAF50</color>
+    <color name="piechart_blue">#FF2196F3</color>
 
-  <!-- A color for highlight text -->
-  <color name="search_highlight">#ffffff00</color>
+    <!-- primary color palatte -->
+    <color name="primary_red">#F44336</color>
+    <color name="primary_pink">#e91e63</color>
+    <color name="primary_purple">#9c27b0</color>
+    <color name="primary_deep_purple">#673ab7</color>
+    <color name="primary_indigo">#3f51b5</color>
+    <color name="primary_blue">@*android:color/material_deep_teal_500</color>
+    <color name="primary_light_blue">@*android:color/material_deep_teal_300</color>
+    <color name="primary_cyan">@*android:color/material_deep_teal_200</color>
+    <color name="primary_teal">#009688</color>
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_light_green">#8bc34a</color>
+    <color name="primary_amber">#FFC107</color>
+    <color name="primary_orange">#FF9800</color>
+    <color name="primary_deep_orange">#FF5722</color>
+    <color name="primary_brown">#795548</color>
+    <color name="primary_grey_900">#000000</color>
+    <color name="primary_blue_grey">#607d8b</color>
+    <color name="primary_teal_900">#004d40</color>
 
-  <!--  Divider. Normal -->
-  <color name="divider_color">#90909090</color>
-  <!--  Divider. Light -->
-  <color name="divider_color_light">#50505050</color>
+    <!-- accent color palatte -->
+    <color name="accent_red">#F44336</color>
+    <color name="accent_pink">#e91e63</color>
+    <color name="accent_purple">#9c27b0</color>
+    <color name="accent_deep_purple">#673ab7</color>
+    <color name="accent_indigo">#3f51b5</color>
+    <color name="accent_blue">@*android:color/material_deep_teal_500</color>
+    <color name="accent_light_blue">@*android:color/material_deep_teal_300</color>
+    <color name="accent_cyan">@*android:color/material_deep_teal_200</color>
+    <color name="accent_teal">#009688</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_light_green">#8bc34a</color>
+    <color name="accent_amber">#FFC107</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_deep_orange">#FF5722</color>
+    <color name="accent_brown">#795548</color>
+    <color name="accent_black">#212121</color>
+    <color name="accent_blue_grey">#607d8b</color>
+    <color name="accent_super_su">#004d40</color>
 
-  <!-- Execution console -->
-  <color name="console_bg">#99000000</color>
-  <color name="console_fg">#99FFFFFF</color>
+    <!-- colors used for files items -->
+    <color name="goback_item">#757575</color>
+    <color name="video_item">#f06292</color>
+    <color name="audio_item">#9575cd</color>
+    <color name="pdf_item">#da4336</color>
+    <color name="code_item">#00bfa5</color>
+    <color name="text_item">#e06055</color>
+    <color name="archive_item">#f9a825</color>
+    <color name="apk_item">#a4c439</color>
+    <color name="generic_item">#9e9e9e</color>
+
+    <color name="grey">#ff666666</color>
+
+    <color name="appsadapter_background">#5f33b5e5</color>
+
+    <color name="text_disabled">#f6f6f6</color>
+
+    <color name="item_background">#9f757575</color>
+    <color name="icon_background_dark">#303030</color>
+
+    <color name="text_light">#8A000000</color>
+    <color name="text_dark">#B3ffffff</color>
+
+    <!-- indicator -->
+    <color name="page_indicator_dark">#80333333</color>
+    <color name="page_indicator_dark_selected">#ff333333</color>
+
+    <!-- cardview foreground and background -->
+    <color name="cardView_foreground">#202020</color>
+    <color name="cardView_background">#363F45</color>
+
+    <color name="white_translucent">#80ffffff</color>
+
+    <color name="disabled_button">#BDBDBD</color>
+
+    <color name="md_btn_selected">#33969696</color>
+    <color name="md_btn_selected_dark">#40CBCBCB</color>
+
+    <color name="md_divider_black">#10000000</color>
+    <color name="md_divider_white">#10FFFFFF</color>
+
+    <color name="md_material_blue_600">#2196F3</color>
+    <color name="md_material_blue_800">#1565C0</color>
+
+    <color name="md_edittext_error">#DD2C00</color>
 
 </resources>

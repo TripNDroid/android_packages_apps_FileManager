@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="drawer_width">304dp</dimen>
+    <dimen name="fastscroller_track_height">70dp</dimen>
+    <dimen name="fastscroller_track_width">7dp</dimen>
+    <dimen name="fastscroller_track_padding">3dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="search_view_margin">10dp</dimen>
+    <dimen name="search_view_edit_text_width">240dp</dimen>
+    <dimen name="search_view_back_margin_left_right">16dp</dimen>
+    <dimen name="search_view_info_margin_left_right">16dp</dimen>
+
+    <dimen name="minimal_material_padding">16dp</dimen>
+    <dimen name="check_icon_margin_bottom_right">10dp</dimen>
+    <dimen name="icon_width">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_height">@dimen/fab_size_normal</dimen>
+    <dimen name="minimal_row_height">100dp</dimen>
+    <dimen name="minimal_header_size">40dp</dimen>
+    <dimen name="minimal_row_size">72dp</dimen>
+    <dimen name="minimal_icon_size">40dp</dimen>
+    <dimen name="minimal_icon_parent_width">56dp</dimen>
+    <dimen name="tick_icon_size">20dp</dimen>
+    <dimen name="check_icon_size_grid">40dp</dimen>
+    <dimen name="check_icon_padding">4dp</dimen>
+    <dimen name="icon_margin_top">16dp</dimen>
+    <dimen name="check_view_margin">2dp</dimen>
+
+    <dimen name="dialog_category">14sp</dimen>
+    <dimen name="dialog_list">16sp</dimen>
+
+    <dimen name="material_generic">16dp</dimen>
+    <dimen name="material_generic_medium">32dp</dimen>
+    <dimen name="material_generic_large">72dp</dimen>
+    <dimen name="material_generic_card_elevation">4dp</dimen>
+    <dimen name="material_generic_title">16sp</dimen>
+    <dimen name="material_generic_title_large">20sp</dimen>
+    <dimen name="material_generic_title_summary">12sp</dimen>
+    <dimen name="material_generic_list_item">72dp</dimen>
+
+    <dimen name="material_sheet_row_height_title">56dp</dimen>
+    <dimen name="material_sheet_row_height_content">48dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+
+    <dimen name="spacebetweenitems_properties_dialog">10dp</dimen>
+
+    <dimen name="list_header_height">48dp</dimen>
+    <dimen name="list_header_textsize">16sp</dimen>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+    <dimen name="labels_text_size">14sp</dimen>
+
+  <!-- Margin around the dialog, excluding the button bar -->
+  <dimen name="md_dialog_frame_margin">24dp</dimen>
+  <!-- Total title margin bottom is 16, but we split this between content and title -->
+  <dimen name="md_title_frame_margin_bottom">12dp</dimen>
+  <dimen name="md_title_frame_margin_bottom_less">6dp</dimen>
+  <!-- The desired padding when no title is visible,
+       This plus md_content_padding_top should equals md_dialog_frame_margin -->
+  <dimen name="md_notitle_vertical_padding">16dp</dimen>
+
+  <dimen name="md_notitle_vertical_padding_more">20dp</dimen>
+
+  <dimen name="md_content_padding_top">8dp</dimen>
+  <dimen name="md_simplelistitem_padding_top">8dp</dimen>
+
+  <dimen name="md_button_min_width">72dp</dimen>
+  <!-- Above and below buttons, 36+6+6=48 for the height of the button frame -->
+  <dimen name="md_button_inset_vertical">6dp</dimen>
+  <dimen name="md_button_inset_horizontal">4dp</dimen>
+  <dimen name="md_button_textpadding_horizontal">1dp</dimen>
+  <dimen name="md_button_padding_horizontal">8dp</dimen>
+  <dimen name="md_button_padding_vertical">4dp</dimen>
+  <dimen name="md_button_padding_horizontal_internalexternal">32dp</dimen>
+  <!-- 16dp - 4dp (inset from background drawable) -->
+  <dimen name="md_button_padding_frame_side">12dp</dimen>
+  <dimen name="md_neutral_button_margin">12dp</dimen>
+
+  <!-- actual content padding bottom is 16dp, but we split between button bar and content -->
+  <dimen name="md_content_padding_bottom">8dp</dimen>
+  <dimen name="md_button_frame_vertical_padding">8dp</dimen>
+  <dimen name="md_button_height">48dp</dimen>
+  <dimen name="md_title_textsize">20sp</dimen>
+  <dimen name="md_content_textsize">16sp</dimen>
+  <dimen name="md_button_textsize">14sp</dimen>
+  <dimen name="md_listitem_textsize">16sp</dimen>
+  <dimen name="md_listitem_height">48dp</dimen>
+  <dimen name="md_listitem_control_margin">6dp</dimen>
+  <dimen name="md_icon_margin">16dp</dimen>
+  <dimen name="md_icon_max_size">48dp</dimen>
+  <dimen name="md_listitem_margin_left">24dp</dimen>
+  <dimen name="md_action_corner_radius">2dp</dimen>
+  <dimen name="md_divider_height">1dp</dimen>
+
+  <dimen name="md_bg_corner_radius">2dp</dimen>
+  <dimen name="circular_progress_border">4dp</dimen>
+  <dimen name="md_listitem_vertical_margin">12dp</dimen>
+  <dimen name="md_listitem_vertical_margin_choice">8dp</dimen>
+
+  <dimen name="md_dialog_max_width">356dp</dimen>
+  <dimen name="md_dialog_vertical_margin">52dp</dimen>
+  <dimen name="md_dialog_horizontal_margin">28dp</dimen>
+
+</resources>
