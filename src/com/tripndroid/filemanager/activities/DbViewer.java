@@ -79,7 +79,7 @@ public class DbViewer extends BaseActivity {
         setSupportActionBar(toolbar);
         if (SDK_INT >= 21) {
             ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription
-                    ("FileManager", ((BitmapDrawable) ContextCompat.getDrawable(this, R.mipmap
+                    ("FileManager", ((BitmapDrawable) ContextCompat.getDrawable(this, R.drawable
                             .ic_launcher))
                             .getBitmap(),
                             getColorPreference().getColor(ColorUsage.getPrimary(MainActivity.currentTab)));

@@ -68,7 +68,7 @@ public class PreferencesActivity extends BaseActivity implements ActivityCompat.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (SDK_INT >= 21) {
             ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription("FileManager",
-                    ((BitmapDrawable) getResources().getDrawable(R.mipmap.ic_launcher)).getBitmap(),
+                    ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap(),
                     getColorPreference().getColor(ColorUsage.getPrimary(MainActivity.currentTab)));
             setTaskDescription(taskDescription);
         }

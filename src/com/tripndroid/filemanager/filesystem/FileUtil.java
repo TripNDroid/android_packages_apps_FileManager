@@ -818,7 +818,7 @@ public abstract class FileUtil {
      */
     private static File copyDummyFiles(Context c) {
         try {
-            copyDummyFile(R.mipmap.ic_launcher, "mkdirFiles", "albumart.jpg", c);
+            copyDummyFile(R.drawable.ic_launcher, "mkdirFiles", "albumart.jpg", c);
             return copyDummyFile(R.raw.temptrack, "mkdirFiles", "temptrack.mp3", c);
 
         } catch (IOException e) {

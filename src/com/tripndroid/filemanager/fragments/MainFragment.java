@@ -1365,7 +1365,7 @@ public class MainFragment extends android.support.v4.app.Fragment {
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, new File(path.getDesc()).getName());
         addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
-                Intent.ShortcutIconResource.fromContext(getActivity(), R.mipmap.ic_launcher));
+                Intent.ShortcutIconResource.fromContext(getActivity(), R.drawable.ic_launcher));
         addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
         getActivity().sendBroadcast(addIntent);
     }

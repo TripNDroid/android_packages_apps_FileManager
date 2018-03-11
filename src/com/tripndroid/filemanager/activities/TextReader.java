@@ -152,7 +152,7 @@ public class TextReader extends BaseActivity implements TextWatcher, View.OnClic
         searchViewLayout.setBackgroundColor(getColorPreference().getColor(ColorUsage.getPrimary(MainActivity.currentTab)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription("FileManager",
-                    ((BitmapDrawable) getResources().getDrawable(R.mipmap.ic_launcher)).getBitmap(),
+                    ((BitmapDrawable) getResources().getDrawable(R.drawable.ic_launcher)).getBitmap(),
                     getColorPreference().getColor(ColorUsage.getPrimary(MainActivity.currentTab)));
             ((Activity) this).setTaskDescription(taskDescription);
         }

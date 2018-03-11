@@ -35,7 +35,7 @@
 
     <application
         android:name=".utils.AppConfig"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher_fm"
         tools:replace="android:label"
         android:label="FileManager"
         android:banner="@drawable/header">
